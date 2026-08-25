@@ -1,7 +1,9 @@
+import LandingPage from "./pages/LandingPage/LandingPage"
+
 export default () => {
     return (
         <>
-         <h1>Niran Fest</h1>
+           <LandingPage/>
         </>
     )
 }
