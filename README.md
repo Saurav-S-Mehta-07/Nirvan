@@ -1,2 +1,1 @@
-# Nirvan
-Web-a-thon
+# Nirvan Tech Fest
