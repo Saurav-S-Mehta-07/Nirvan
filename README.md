@@ -1,1 +1,0 @@
-# Nirvan Tech Fest
