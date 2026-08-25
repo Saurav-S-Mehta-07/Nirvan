@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>NIRVAN '26 | GEHU Tech Fest</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;9..144,700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500;700&family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:wght@100..900&family=Inter:wght@100..900&family=JetBrains+Mono:wght@100..900&display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#bcc2ff",
+                        "tertiary-fixed": "#ffd9e4",
+                        "on-surface": "#e3e1ed",
+                        "secondary-fixed": "#e9ddff",
+                        "surface-bright": "#383841",
+                        "primary-fixed-dim": "#bcc2ff",
+                        "on-tertiary": "#640038",
+                        "primary-container": "#7586ff",
+                        "surface-container": "#1e1f27",
+                        "on-tertiary-fixed": "#3e0021",
+                        "on-primary": "#001999",
+                        "surface-container-high": "#292932",
+                        "on-secondary": "#3c0091",
+                        "on-surface-variant": "#c5c5d7",
+                        "primary-fixed": "#dfe0ff",
+                        "on-primary-fixed-variant": "#1c32be",
+                        "surface-tint": "#bcc2ff",
+                        "surface": "#12131b",
+                        "inverse-on-surface": "#2f3038",
+                        "outline-variant": "#454654",
+                        "surface-container-lowest": "#0d0e15",
+                        "on-primary-container": "#001587",
+                        "surface-container-highest": "#34343d",
+                        "on-tertiary-container": "#580030",
+                        "on-secondary-container": "#c4abff",
+                        "inverse-surface": "#e3e1ed",
+                        "on-background": "#e3e1ed",
+                        "surface-dim": "#12131b",
+                        "error": "#ffb4ab",
+                        "secondary-container": "#571bc1",
+                        "background": "#12131b",
+                        "secondary-fixed-dim": "#d0bcff",
+                        "surface-container-low": "#1a1b23",
+                        "tertiary": "#ffb0cc",
+                        "inverse-primary": "#3b4ed6",
+                        "outline": "#8f8fa0",
+                        "on-tertiary-fixed-variant": "#8d0051",
+                        "tertiary-container": "#f2579e",
+                        "error-container": "#93000a",
+                        "secondary": "#d0bcff",
+                        "on-error": "#690005",
+                        "tertiary-fixed-dim": "#ffb0cc",
+                        "surface-variant": "#34343d",
+                        "on-primary-fixed": "#000c61",
+                        "on-secondary-fixed-variant": "#5516be",
+                        "on-secondary-fixed": "#23005c",
+                        "on-error-container": "#ffdad6"
+                    },
+                    borderRadius: {
+                        "DEFAULT": "0.125rem",
+                        "lg": "0.25rem",
+                        "xl": "0.5rem",
+                        "full": "0.75rem"
+                    },
+                    spacing: {
+                        "unit": "4px",
+                        "margin": "32px",
+                        "container-max": "1280px",
+                        "gutter": "24px"
+                    },
+                    fontFamily: {
+                        "label-md": ["JetBrains Mono"],
+                        "body-lg": ["Inter"],
+                        "headline-lg": ["Fraunces"],
+                        "body-md": ["Inter"],
+                        "headline-lg-mobile": ["Fraunces"],
+                        "display-lg": ["Fraunces"],
+                        "label-sm": ["JetBrains Mono"],
+                        "headline-md": ["Fraunces"]
+                    },
+                    fontSize: {
+                        "label-md": ["14px", { lineHeight: "20px", letterSpacing: "0.05em", fontWeight: "500" }],
+                        "body-lg": ["18px", { lineHeight: "28px", fontWeight: "400" }],
+                        "headline-lg": ["48px", { lineHeight: "56px", fontWeight: "600" }],
+                        "body-md": ["16px", { lineHeight: "24px", fontWeight: "400" }],
+                        "headline-lg-mobile": ["32px", { lineHeight: "40px", fontWeight: "600" }],
+                        "display-lg": ["72px", { lineHeight: "80px", letterSpacing: "-0.02em", fontWeight: "700" }],
+                        "label-sm": ["12px", { lineHeight: "16px", letterSpacing: "0.1em", fontWeight: "500" }],
+                        "headline-md": ["32px", { lineHeight: "40px", fontWeight: "600" }]
+                    }
+                }
+            }
+        }
+    </script>
+<style>
+        body {
+            background-color: #0A0B14;
+            color: #e3e1ed;
+        }
+        
+        .metallic-frame {
+            border: 1px solid #2A2E4A;
+            background: linear-gradient(180deg, rgba(232, 184, 75, 0.05) 0%, rgba(21, 23, 42, 0.5) 100%);
+            position: relative;
+            backdrop-filter: blur(12px);
+        }
+        
+        .metallic-frame::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 30%;
+            height: 1px;
+            background: linear-gradient(90deg, #E8B84B, transparent);
+            opacity: 0.7;
+        }
+
+        .btn-primary {
+            border: 1px solid #E8B84B;
+            color: #E8B84B;
+            background: transparent;
+            position: relative;
+            transition: all 0.3s ease;
+        }
+        
+        .btn-primary:hover {
+            box-shadow: 0 0 15px rgba(232, 184, 75, 0.4);
+            background: rgba(232, 184, 75, 0.1);
+        }
+
+        .btn-secondary {
+            border: 1px solid #2A2E4A;
+            color: #9A9DBE;
+            background: rgba(10, 11, 20, 0.6);
+            transition: all 0.3s ease;
+        }
+
+        .btn-secondary:hover {
+            border-color: #454654;
+            color: #e3e1ed;
+            background: #1E2138;
+        }
+
+        .glass-panel {
+            background: rgba(21, 23, 42, 0.7);
+            border: 1px solid #2A2E4A;
+            backdrop-filter: blur(20px);
+        }
+
+        /* Nav specific styles */
+        .nav-item-active {
+            color: #bcc2ff;
+            border-right: 2px solid #bcc2ff;
+            background-color: rgba(117, 134, 255, 0.1);
+        }
+        
+        .fade-up {
+            opacity: 0;
+            transform: translateY(20px);
+            transition: opacity 0.8s ease, transform 0.8s ease;
+        }
+        
+        .fade-up.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    </style>
+</head>
+<body class="antialiased overflow-x-hidden selection:bg-primary-container selection:text-on-primary-container">
+<!-- Top App Bar (Mobile mainly, but visible as per JSON logic) -->
+<header class="fixed top-0 right-0 w-full md:w-[calc(100%-256px)] flex justify-end px-gutter h-16 items-center z-40 bg-surface/80 backdrop-blur-lg border-b border-outline-variant">
+<div class="flex items-center gap-4">
+<a class="text-on-surface-variant hover:text-primary transition-colors" href="#">
+<span class="material-symbols-outlined">qr_code_2</span>
+</a>
+<a class="text-on-surface-variant hover:text-primary transition-colors" href="#">
+<span class="material-symbols-outlined">team_drive_key</span>
+</a>
+<a class="text-on-surface-variant hover:text-primary transition-colors" href="#">
+<span class="material-symbols-outlined">signal_cellular_alt_2_bar</span>
+</a>
+</div>
+</header>
+<!-- Side Navigation -->
+<nav class="fixed left-0 top-0 h-full w-64 bg-surface flex flex-col p-margin border-r border-outline-variant z-50 hidden md:flex">
+<div class="mb-12">
+<h1 class="font-headline-md text-headline-md text-primary font-bold">NIRVAN '26</h1>
+<p class="font-label-md text-label-md text-on-surface-variant mt-2">GEHU Tech Fest</p>
+</div>
+<div class="flex flex-col gap-2 flex-grow">
+<a class="flex items-center gap-4 px-4 py-3 rounded-lg nav-item-active translate-x-1 transition-transform" href="#home">
+<span class="material-symbols-outlined">home</span>
+<span class="font-label-md text-label-md">Home</span>
+</a>
+<a class="flex items-center gap-4 px-4 py-3 rounded-lg text-on-surface-variant hover:text-on-surface hover:bg-surface-bright transition-all duration-200" href="#about">
+<span class="material-symbols-outlined">info</span>
+<span class="font-label-md text-label-md">About</span>
+</a>
+<a class="flex items-center gap-4 px-4 py-3 rounded-lg text-on-surface-variant hover:text-on-surface hover:bg-surface-bright transition-all duration-200" href="#events">
+<span class="material-symbols-outlined">event</span>
+<span class="font-label-md text-label-md">Events</span>
+</a>
+<a class="flex items-center gap-4 px-4 py-3 rounded-lg text-on-surface-variant hover:text-on-surface hover:bg-surface-bright transition-all duration-200" href="#schedule">
+<span class="material-symbols-outlined">calendar_today</span>
+<span class="font-label-md text-label-md">Schedule</span>
+</a>
+<a class="flex items-center gap-4 px-4 py-3 rounded-lg text-on-surface-variant hover:text-on-surface hover:bg-surface-bright transition-all duration-200" href="#speakers">
+<span class="material-symbols-outlined">groups</span>
+<span class="font-label-md text-label-md">Speakers</span>
+</a>
+<a class="flex items-center gap-4 px-4 py-3 rounded-lg text-on-surface-variant hover:text-on-surface hover:bg-surface-bright transition-all duration-200" href="#gallery">
+<span class="material-symbols-outlined">collections</span>
+<span class="font-label-md text-label-md">Gallery</span>
+</a>
+<a class="flex items-center gap-4 px-4 py-3 rounded-lg text-on-surface-variant hover:text-on-surface hover:bg-surface-bright transition-all duration-200" href="#contact">
+<span class="material-symbols-outlined">mail</span>
+<span class="font-label-md text-label-md">Contact</span>
+</a>
+</div>
+</nav>
+<!-- Main Content Area -->
+<main class="w-full md:w-[calc(100%-256px)] md:ml-64 relative min-h-screen">
+<!-- Hero Section -->
+<section class="relative min-h-screen flex items-center justify-center pt-16 px-gutter overflow-hidden" id="home">
+<!-- Background Image Placeholder -->
+<div class="absolute inset-0 bg-cover bg-center bg-no-repeat opacity-40 mix-blend-overlay" data-alt="A cinematic dark stone academy at night, illuminated by glowing technical runes and futuristic holograms. The aesthetic blends ancient arcane architecture with high-tech cyberpunk elements. Deep shadows contrast with bright indigo and gold luminescent details. The mood is mysterious, intellectual, and intensely futuristic." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuAaVge3mmimp_Gyf3JidacaOIgBKPf00YXN8P9NLptFiCj1Kw4gsFHdml-QP8oXTiTJ_9oRYA93EJJEgbB9B6pk2Yv4it9x3h7RC22Nz9rr8k5OCmpo6H4hj2LtYmMgGqiJFIgO4M9zh3jjoDDrwlDuagiODA8Yc02TFcmkHXQVJ4Ilm3SlalprkM7m9ChM8x1MgDSriZQJc-Nh1KlgpiaqAZsVwMAF5Ps2pgPtic6reBash8xrGSNCzg')"></div>
+<!-- Gradient Overlay for readability -->
+<div class="absolute inset-0 bg-gradient-to-b from-[#0A0B14]/80 via-[#0A0B14]/60 to-[#0A0B14]"></div>
+<div class="relative z-10 max-w-container-max mx-auto text-center flex flex-col items-center">
+<div class="inline-flex items-center gap-2 px-4 py-2 rounded-full border border-outline-variant bg-surface-container/50 backdrop-blur-md mb-8">
+<span class="material-symbols-outlined text-primary text-sm">calendar_month</span>
+<span class="font-label-md text-label-sm text-on-surface-variant">Nov 12-14, 2026 | GEHU Campus</span>
+</div>
+<h1 class="font-display-lg text-display-lg md:text-[96px] md:leading-[100px] bg-clip-text text-transparent bg-gradient-to-r from-gray-300 via-white to-[#E8B84B] tracking-tight mb-6">
+                    NIRVAN '26
+                </h1>
+<p class="font-headline-md text-headline-lg-mobile md:text-headline-md text-on-surface mb-12 max-w-2xl">
+                    Where Ideas Become Innovation.
+                </p>
+<!-- Countdown Timer -->
+<div class="grid grid-cols-4 gap-4 md:gap-8 mb-12 font-label-md text-label-md text-[#E8B84B]">
+<div class="flex flex-col items-center metallic-frame rounded-lg p-4 w-24">
+<span class="text-3xl font-bold">42</span>
+<span class="text-on-surface-variant text-xs mt-1">DAYS</span>
+</div>
+<div class="flex flex-col items-center metallic-frame rounded-lg p-4 w-24">
+<span class="text-3xl font-bold">18</span>
+<span class="text-on-surface-variant text-xs mt-1">HOURS</span>
+</div>
+<div class="flex flex-col items-center metallic-frame rounded-lg p-4 w-24">
+<span class="text-3xl font-bold">05</span>
+<span class="text-on-surface-variant text-xs mt-1">MINS</span>
+</div>
+<div class="flex flex-col items-center metallic-frame rounded-lg p-4 w-24">
+<span class="text-3xl font-bold">00</span>
+<span class="text-on-surface-variant text-xs mt-1">SECS</span>
+</div>
+</div>
+<div class="flex flex-col sm:flex-row gap-6">
+<button class="btn-primary px-8 py-4 rounded-DEFAULT font-label-md text-label-md uppercase tracking-widest flex items-center gap-2">
+<span>Explore Events</span>
+<span class="material-symbols-outlined text-sm">arrow_forward</span>
+</button>
+<button class="btn-secondary px-8 py-4 rounded-DEFAULT font-label-md text-label-md uppercase tracking-widest" onclick="toggleModal('registerModal')">
+                        Register Now
+                    </button>
+</div>
+</div>
+</section>
+<!-- About Strip Section -->
+<section class="py-24 px-gutter max-w-container-max mx-auto fade-up" id="about">
+<div class="text-center mb-16">
+<h2 class="font-headline-lg text-headline-lg-mobile md:text-headline-lg text-on-surface">Why NIRVAN?</h2>
+<div class="w-24 h-1 bg-gradient-to-r from-transparent via-[#E8B84B] to-transparent mx-auto mt-6 opacity-50"></div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+<!-- Card 1 -->
+<div class="metallic-frame rounded-lg p-8 hover:-translate-y-2 transition-transform duration-300 group">
+<div class="w-12 h-12 rounded-full bg-primary-container/10 border border-primary/20 flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
+<span class="material-symbols-outlined text-primary" style="font-variation-settings: 'FILL' 1;">rocket_launch</span>
+</div>
+<h3 class="font-headline-md text-2xl text-on-surface mb-3">Mission</h3>
+<p class="font-body-md text-body-md text-on-surface-variant">Pushing the boundaries of collegiate technical capabilities through rigorous challenges.</p>
+</div>
+<!-- Card 2 -->
+<div class="metallic-frame rounded-lg p-8 hover:-translate-y-2 transition-transform duration-300 group">
+<div class="w-12 h-12 rounded-full bg-secondary-container/10 border border-secondary/20 flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
+<span class="material-symbols-outlined text-secondary" style="font-variation-settings: 'FILL' 1;">hub</span>
+</div>
+<h3 class="font-headline-md text-2xl text-on-surface mb-3">Community</h3>
+<p class="font-body-md text-body-md text-on-surface-variant">Forge alliances with like-minded innovators across diverse technological disciplines.</p>
+</div>
+<!-- Card 3 -->
+<div class="metallic-frame rounded-lg p-8 hover:-translate-y-2 transition-transform duration-300 group">
+<div class="w-12 h-12 rounded-full bg-tertiary-container/10 border border-tertiary/20 flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
+<span class="material-symbols-outlined text-tertiary" style="font-variation-settings: 'FILL' 1;">lightbulb</span>
+</div>
+<h3 class="font-headline-md text-2xl text-on-surface mb-3">Innovation</h3>
+<p class="font-body-md text-body-md text-on-surface-variant">Incubating raw ideas into prototype-ready solutions for real-world problems.</p>
+</div>
+<!-- Card 4 -->
+<div class="metallic-frame rounded-lg p-8 hover:-translate-y-2 transition-transform duration-300 group">
+<div class="w-12 h-12 rounded-full bg-error-container/10 border border-error/20 flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
+<span class="material-symbols-outlined text-error" style="font-variation-settings: 'FILL' 1;">emoji_events</span>
+</div>
+<h3 class="font-headline-md text-2xl text-on-surface mb-3">Competition</h3>
+<p class="font-body-md text-body-md text-on-surface-variant">Test your mettle against the best minds in high-stakes, adrenaline-fueled arenas.</p>
+</div>
+</div>
+</section>
+<!-- Footer -->
+<footer class="w-full py-20 px-margin flex flex-col md:flex-row justify-between items-center gap-8 bg-surface-container-lowest border-t border-outline-variant mt-24">
+<div class="flex items-center gap-4">
+<h2 class="font-headline-md text-headline-md text-primary">NIRVAN '26</h2>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant">Hosted by Tech Geeks © 2026</p>
+<div class="flex gap-6">
+<a class="font-body-md text-body-md text-on-surface-variant hover:text-primary transition-colors" href="#">Privacy Policy</a>
+<a class="font-body-md text-body-md text-on-surface-variant hover:text-primary transition-colors" href="#">Terms of Service</a>
+<a class="font-body-md text-body-md text-on-surface-variant hover:text-primary transition-colors" href="#">Code of Conduct</a>
+</div>
+</footer>
+</main>
+<!-- Registration Modal -->
+<div class="fixed inset-0 z-[100] hidden flex items-center justify-center p-4" id="registerModal">
+<div class="absolute inset-0 bg-[#0A0B14]/90 backdrop-blur-sm" onclick="toggleModal('registerModal')"></div>
+<div class="metallic-frame rounded-xl p-8 max-w-md w-full relative z-10 animate-fade-in-up">
+<button class="absolute top-4 right-4 text-on-surface-variant hover:text-on-surface" onclick="toggleModal('registerModal')">
+<span class="material-symbols-outlined">close</span>
+</button>
+<h2 class="font-headline-md text-2xl text-on-surface mb-6">Secure Your Access</h2>
+<form class="flex flex-col gap-4">
+<div>
+<label class="font-label-md text-label-sm text-on-surface-variant block mb-1">Full Name</label>
+<input class="w-full bg-[#0A0B14] border border-outline-variant rounded-DEFAULT px-4 py-2 text-on-surface font-label-md focus:border-primary focus:ring-1 focus:ring-primary outline-none transition-colors" placeholder="Enter name" type="text"/>
+</div>
+<div>
+<label class="font-label-md text-label-sm text-on-surface-variant block mb-1">Email Classification</label>
+<input class="w-full bg-[#0A0B14] border border-outline-variant rounded-DEFAULT px-4 py-2 text-on-surface font-label-md focus:border-primary focus:ring-1 focus:ring-primary outline-none transition-colors" placeholder="terminal@domain.com" type="email"/>
+</div>
+<div>
+<label class="font-label-md text-label-sm text-on-surface-variant block mb-1">Primary Event Directive</label>
+<select class="w-full bg-[#0A0B14] border border-outline-variant rounded-DEFAULT px-4 py-2 text-on-surface font-label-md focus:border-primary focus:ring-1 focus:ring-primary outline-none transition-colors appearance-none">
+<option>Code of the Ancients</option>
+<option>Mecha Clash</option>
+<option>The Future of Sentience</option>
+</select>
+</div>
+<div class="mt-4">
+<button class="w-full btn-primary px-8 py-3 rounded-DEFAULT font-label-md text-label-md uppercase tracking-widest" type="button">
+                        Initialize Registration
+                    </button>
+</div>
+</form>
+</div>
+</div>
+<script>
+        function toggleModal(id) {
+            const modal = document.getElementById(id);
+            if (modal.classList.contains('hidden')) {
+                modal.classList.remove('hidden');
+            } else {
+                modal.classList.add('hidden');
+            }
+        }
+
+        // Simple intersection observer for fade-up animation
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                }
+            });
+        }, { threshold: 0.1 });
+
+        document.querySelectorAll('.fade-up').forEach((el) => {
+            observer.observe(el);
+        });
+    </script>
+</body></html>

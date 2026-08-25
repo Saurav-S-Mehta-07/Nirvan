@@ -1,0 +1,454 @@
+{
+  "fest": {
+    "name": "NIRVAN '26",
+    "tagline": "Where Ideas Become Innovation",
+    "type": "Annual College Technical Fest",
+    "dates": {
+      "start": "2026-10-24",
+      "end": "2026-10-26",
+      "display": "October 24 - 26, 2026"
+    },
+    "venue": "GEHU Campus",
+    "college": "Graphic Era Hill University, Haldwani Campus",
+    "audience": ["Students", "Developers", "Designers", "Technology enthusiasts"],
+    "theme": ["Innovation", "Technology", "Competition", "Community"],
+    "about": "NIRVAN '26 brings together developers, innovators, designers, and technology enthusiasts for two days of challenges, competitions, workshops, and collaboration.",
+    "countdownTarget": "2026-10-24T09:00:00+05:30",
+    "cta": {
+      "primary": { "label": "Explore Events", "action": "scroll:#events" },
+      "secondary": { "label": "Register Now", "action": "open:registration" }
+    },
+    "contact": {
+      "email": "nirvan@gehu.in",
+      "phone": "+91 1256489632",
+      "location": "GEHU Campus"
+    }
+  },
+
+  "events": [
+    {
+      "id": "hackathon",
+      "slug": "hacksprint",
+      "name": "HackSprint",
+      "category": "Hackathon",
+      "tag": "TECH",
+      "shortDescription": "A high-energy innovation challenge where participants turn ideas into impactful solutions.",
+      "description": "Build, code, collaborate, and compete against talented teams while solving real-world problems under time constraints. HackSprint is an overnight development marathon that tests your ability to design, build, and ship a working solution from scratch.",
+      "date": "2026-10-25",
+      "time": "18:00",
+      "durationHours": 12,
+      "venue": "Innovation Hub",
+      "teamSize": { "min": 3, "max": 5 },
+      "fee": 150,
+      "prizePool": 30000,
+      "currency": "INR",
+      "eligibility": [
+        "Open to all undergraduate students",
+        "Participants must register as a team of 3-5 members",
+        "Valid college ID required on the day of the event"
+      ],
+      "rules": [
+        "Duration: 12 hours, overnight",
+        "Teams must build a working prototype from scratch during the event",
+        "Use of open-source libraries and frameworks is allowed",
+        "Plagiarism or pre-built projects will result in disqualification",
+        "A mentor round will be held midway through the event",
+        "Judges' decision is final and binding"
+      ],
+      "registerCta": "Register for HackSprint"
+    },
+    {
+      "id": "coding",
+      "slug": "coderush",
+      "name": "CodeRush",
+      "category": "Competitive Programming",
+      "tag": "TECH",
+      "shortDescription": "Test your algorithmic skills and speed in the ultimate competitive programming showdown.",
+      "description": "CodeRush is the premier competitive programming event of NIRVAN '26. It challenges participants to solve algorithmic problems using C, C++, Java, or Python. The event is designed to test logic, optimization skills, and coding speed. Participants will face a series of increasingly difficult problems on a custom judge platform.",
+      "date": "2026-10-25",
+      "time": "10:00",
+      "durationHours": 3,
+      "venue": "Computer Lab 1",
+      "teamSize": { "min": 1, "max": 2 },
+      "fee": 100,
+      "prizePool": 15000,
+      "currency": "INR",
+      "eligibility": [
+        "Open to all undergraduate students",
+        "Participants can register individually or in teams of two",
+        "Valid college ID required on the day of the event"
+      ],
+      "rules": [
+        "Duration: 3 hours",
+        "Platform: HackerRank (link will be provided)",
+        "Internet access is restricted to the competition platform only",
+        "Use of mobile phones or external storage devices is strictly prohibited",
+        "Plagiarism will result in immediate disqualification",
+        "Scoring is based on the number of test cases passed",
+        "In case of a tie, time taken to solve will be the tie-breaker",
+        "The judges' decision is final and binding"
+      ],
+      "registerCta": "Register for CodeRush"
+    },
+    {
+      "id": "design",
+      "slug": "ui-ux-arena",
+      "name": "UI/UX Arena",
+      "category": "Design",
+      "tag": "DESIGN",
+      "shortDescription": "Design intuitive and aesthetic interfaces for complex real-world problems.",
+      "description": "A design sprint and rapid prototyping challenge. Teams are given a real-world product brief and must research, wireframe, and design a polished, user-centered interface within the allotted time using tools of their choice.",
+      "date": "2026-10-25",
+      "time": "14:00",
+      "durationHours": 3,
+      "venue": "Design Studio",
+      "teamSize": { "min": 1, "max": 3 },
+      "fee": 100,
+      "prizePool": 8000,
+      "currency": "INR",
+      "eligibility": [
+        "Open to all undergraduate students",
+        "Teams of 1-3 members",
+        "Prior experience with a design tool (Figma, Adobe XD, etc.) is recommended"
+      ],
+      "rules": [
+        "Duration: 3 hours",
+        "Brief will be revealed at the start of the event",
+        "Any design tool is permitted (Figma, Adobe XD, Sketch, etc.)",
+        "Final files must be submitted as a shareable prototype link",
+        "Plagiarized or template-based designs will be disqualified",
+        "Judges' decision is final and binding"
+      ],
+      "registerCta": "Register for UI/UX Arena"
+    },
+    {
+      "id": "robotics",
+      "slug": "robowar",
+      "name": "RoboWar Championship",
+      "category": "Robotics",
+      "tag": "TECH",
+      "shortDescription": "Design, build, and battle in the ultimate arena of destruction and engineering precision.",
+      "description": "The ultimate battle of mechanical engineering. Teams bring their own combat robots to compete in a knockout-style tournament in the arena. Robots are judged on durability, offensive strategy, and control.",
+      "date": "2026-10-25",
+      "time": "16:00",
+      "durationHours": 3,
+      "venue": "Open Grounds",
+      "teamSize": { "min": 2, "max": 4 },
+      "fee": 500,
+      "prizePool": 25000,
+      "currency": "INR",
+      "eligibility": [
+        "Open to all undergraduate students",
+        "Robots must comply with the published weight and size regulations",
+        "Teams of 2-4 members",
+        "Valid college ID required on the day of the event"
+      ],
+      "rules": [
+        "Weight limit: 15kg per robot",
+        "No flame, liquid, or projectile-based weapons allowed",
+        "Matches are knockout-style, 3 minutes per round",
+        "Robots must pass a safety inspection before competing",
+        "Judges' decision is final and binding"
+      ],
+      "registerCta": "Register for RoboWar"
+    },
+    {
+      "id": "iot",
+      "slug": "smart-systems-expo",
+      "name": "Smart Systems Expo",
+      "category": "IoT / Hardware",
+      "tag": "TECH",
+      "shortDescription": "Showcase your hardware innovations and IoT solutions to a panel of expert judges.",
+      "description": "A showcase competition for IoT and embedded systems projects. Teams present working hardware prototypes solving real-world problems, judged on innovation, functionality, and technical depth.",
+      "date": "2026-10-26",
+      "time": "11:00",
+      "durationHours": 2,
+      "venue": "Seminar Hall 1",
+      "teamSize": { "min": 1, "max": 4 },
+      "fee": 150,
+      "prizePool": 12000,
+      "currency": "INR",
+      "eligibility": [
+        "Open to all undergraduate students",
+        "Project must include a working hardware prototype",
+        "Teams of 1-4 members"
+      ],
+      "rules": [
+        "Each team gets a 10-minute presentation + 5-minute Q&A slot",
+        "Prototype must be self-powered or provide own power source",
+        "Judging based on innovation, functionality, and presentation",
+        "Judges' decision is final and binding"
+      ],
+      "registerCta": "Register for Smart Systems Expo"
+    },
+    {
+      "id": "esports",
+      "slug": "esports-arena",
+      "name": "E-Sports Arena",
+      "category": "Gaming",
+      "tag": "GAMING",
+      "shortDescription": "Experience the ultimate competitive gaming arena where strategy, teamwork, and reflexes collide.",
+      "description": "Compete against fellow gamers, climb the leaderboard, and battle for victory in a bracket-style tournament across popular competitive titles.",
+      "date": "2026-10-25",
+      "time": "14:00",
+      "durationHours": 4,
+      "venue": "Lab 2",
+      "teamSize": { "min": 1, "max": 5 },
+      "fee": 100,
+      "prizePool": 10000,
+      "currency": "INR",
+      "eligibility": [
+        "Open to all students",
+        "Team size varies by game title (see rules)",
+        "Participants must bring their own peripherals if preferred"
+      ],
+      "rules": [
+        "Single/double elimination bracket format",
+        "Game titles and formats announced prior to the event",
+        "Any use of cheats, exploits, or third-party software is grounds for disqualification",
+        "Judges'/admins' decision is final and binding"
+      ],
+      "registerCta": "Register for E-Sports Arena"
+    },
+    {
+      "id": "ctf",
+      "slug": "ctf-cyberquest",
+      "name": "CTF: CyberQuest",
+      "category": "Cybersecurity",
+      "tag": "TECH",
+      "shortDescription": "Put your cybersecurity skills to the test through a series of challenges.",
+      "description": "A Capture The Flag competition covering cryptography, web security, forensics, and reverse engineering. Find the flags, crack the challenges, and prove your skills against the clock.",
+      "date": "2026-10-25",
+      "time": "16:00",
+      "durationHours": 3,
+      "venue": "Open Ground",
+      "teamSize": { "min": 1, "max": 3 },
+      "fee": 100,
+      "prizePool": 12000,
+      "currency": "INR",
+      "eligibility": [
+        "Open to all undergraduate students",
+        "Basic knowledge of networking and security concepts recommended",
+        "Teams of 1-3 members"
+      ],
+      "rules": [
+        "Duration: 3 hours",
+        "Categories: cryptography, web security, forensics, reverse engineering",
+        "Attacking the competition infrastructure itself is prohibited",
+        "Flag sharing between teams results in disqualification",
+        "Judges'/admins' decision is final and binding"
+      ],
+      "registerCta": "Register for CTF"
+    },
+    {
+      "id": "treasurehunt",
+      "slug": "treasure-hunt",
+      "name": "Treasure Hunt",
+      "category": "Adventure",
+      "tag": "FUN",
+      "shortDescription": "A thrilling adventure combining logic, teamwork, observation, and problem-solving.",
+      "description": "Follow clues, overcome challenges, and race against other teams across campus to uncover the ultimate treasure.",
+      "date": "2026-10-25",
+      "time": "11:00",
+      "durationHours": 2,
+      "venue": "Seminar Hall / Campus-wide",
+      "teamSize": { "min": 2, "max": 4 },
+      "fee": 80,
+      "prizePool": 6000,
+      "currency": "INR",
+      "eligibility": [
+        "Open to all students",
+        "Teams of 2-4 members",
+        "Must remain within designated campus boundaries"
+      ],
+      "rules": [
+        "Clues must be solved in sequence",
+        "No outside help or internet searches permitted",
+        "First team to reach the final checkpoint wins",
+        "Judges'/admins' decision is final and binding"
+      ],
+      "registerCta": "Register for Treasure Hunt"
+    },
+    {
+      "id": "workshop",
+      "slug": "tech-workshop",
+      "name": "Tech Workshop",
+      "category": "Workshop",
+      "tag": "LEARN",
+      "shortDescription": "An interactive learning experience designed to bridge the gap between theory and practical skills.",
+      "description": "Learn from experts, explore emerging technologies, and gain hands-on experience through engaging activities. Topic announced closer to the event date.",
+      "date": "2026-10-24",
+      "time": "13:00",
+      "durationHours": 2,
+      "venue": "Seminar Hall 1",
+      "teamSize": { "min": 1, "max": 1 },
+      "fee": 50,
+      "prizePool": 0,
+      "currency": "INR",
+      "eligibility": [
+        "Open to all students",
+        "Individual registration only",
+        "Laptop recommended for hands-on portions"
+      ],
+      "rules": [
+        "Seats are limited and allotted on a first-come, first-served basis",
+        "Participants must carry their own laptops for hands-on sessions",
+        "Certificates provided on completion"
+      ],
+      "registerCta": "Register for Workshop"
+    }
+  ],
+
+  "schedule": {
+    "day1": {
+      "label": "Day 1",
+      "date": "2026-10-24",
+      "items": [
+        { "time": "09:00 AM", "title": "Opening Ceremony", "description": "Kickoff presentation and keynote address.", "venue": "Main Auditorium", "tags": [] },
+        { "time": "10:00 AM", "title": "CodeRush", "description": "Competitive programming tournament begins.", "venue": "Computer Lab 1", "tags": ["TECH"] },
+        { "time": "11:00 AM", "title": "Tech Quiz", "description": "Trivia covering the latest in tech and computer science.", "venue": "Seminar Hall 1", "tags": ["TECH"] },
+        { "time": "01:00 PM", "title": "Lunch Break", "description": "Break for lunch.", "venue": "Food Court", "tags": [] },
+        { "time": "01:00 PM", "title": "Tech Workshop", "description": "Hands-on workshop with industry experts.", "venue": "Seminar Hall 1", "tags": ["LEARN"] },
+        { "time": "05:00 PM", "title": "Speaker Session", "description": "Guest talk from an industry speaker.", "venue": "Main Auditorium", "tags": [] }
+      ]
+    },
+    "day2": {
+      "label": "Day 2",
+      "date": "2026-10-25",
+      "items": [
+        { "time": "10:00 AM", "title": "CodeRush Finals", "description": "Top qualifiers compete for the top spot.", "venue": "Computer Lab 1", "tags": ["TECH"] },
+        { "time": "11:00 AM", "title": "Treasure Hunt", "description": "Campus-wide clue-solving adventure.", "venue": "Seminar Hall / Campus-wide", "tags": ["FUN"] },
+        { "time": "02:00 PM", "title": "UI/UX Arena", "description": "Design sprint and rapid prototyping challenge.", "venue": "Design Studio", "tags": ["DESIGN"] },
+        { "time": "02:00 PM", "title": "E-Sports Arena", "description": "Bracket-style competitive gaming tournament.", "venue": "Lab 2", "tags": ["GAMING"] },
+        { "time": "04:00 PM", "title": "RoboWar Championship", "description": "Bot combat arena qualifiers and finals.", "venue": "Open Grounds", "tags": ["TECH"] },
+        { "time": "04:00 PM", "title": "CTF: CyberQuest", "description": "Capture-the-flag cybersecurity challenge.", "venue": "Open Ground", "tags": ["TECH"] },
+        { "time": "06:00 PM", "title": "HackSprint Begins", "description": "12-hour overnight development marathon commences.", "venue": "Innovation Hub", "tags": ["TECH"] }
+      ]
+    },
+    "day3": {
+      "label": "Day 3",
+      "date": "2026-10-26",
+      "items": [
+        { "time": "09:00 AM", "title": "HackSprint Submissions", "description": "Final submissions and judging begin.", "venue": "Innovation Hub", "tags": ["TECH"] },
+        { "time": "11:00 AM", "title": "Smart Systems Expo", "description": "IoT and hardware project showcase.", "venue": "Seminar Hall 1", "tags": ["TECH"] },
+        { "time": "02:00 PM", "title": "Closing Ceremony & Prize Distribution", "description": "Winners announced across all events.", "venue": "Main Auditorium", "tags": [] }
+      ]
+    }
+  },
+
+  "speakers": [
+    {
+      "id": "alice-chen",
+      "name": "Dr. Alice Chen",
+      "designation": "Chief AI Scientist",
+      "organization": "Quantum Computing Corp.",
+      "shortBio": "Pioneering research in quantum neural networks and their application in cryptography. Former lead researcher at MIT Media Lab.",
+      "bio": "Dr. Alice Chen is a leading researcher in the field of Artificial General Intelligence (AGI) and machine learning systems. With over 15 years of experience bridging academic research and industry applications, her work focuses on developing robust, interpretable neural architectures that can operate effectively in resource-constrained environments.\n\nPrior to her role as Chief AI Scientist at NextGen Tech, Dr. Chen led the deep learning research group at the Global Institute of Technology, where her dissertation on 'Efficient Inference in Sparse Networks' received the university's highest honors.\n\nAt NIRVAN '26, Dr. Chen will be discussing the future of edge computing AI and how decentralized models are shaping the next generation of smart devices.",
+      "email": "alice.chen@example.com",
+      "website": "www.dralicechen.ai",
+      "sessions": [
+        { "day": "Day 1", "time": "09:00 AM - 10:00 AM", "title": "Keynote: Opening Ceremony", "description": "Official inauguration of NIRVAN '26.", "venue": "Main Auditorium" },
+        { "day": "Day 2", "time": "06:00 PM onwards", "title": "HackSprint Mentor Session", "description": "Overnight development marathon mentoring.", "venue": "Innovation Hub" }
+      ]
+    },
+    {
+      "id": "marcus-vance",
+      "name": "Marcus Vance",
+      "designation": "VP of Engineering",
+      "organization": "Nexus Robotics",
+      "shortBio": "Leading the development of next-generation autonomous swarm robotics for space exploration and extreme environments.",
+      "bio": "Marcus Vance has spent over a decade building robotic systems designed to operate in the harshest environments on Earth and beyond. As VP of Engineering at Nexus Robotics, he leads a team developing autonomous swarm robotics for space exploration.\n\nMarcus is a frequent speaker at robotics and automation conferences and has mentored dozens of student robotics teams over the years.\n\nAt NIRVAN '26, Marcus will judge the RoboWar Championship and host a talk on the future of autonomous systems.",
+      "email": "marcus.vance@example.com",
+      "website": "www.nexusrobotics.example",
+      "sessions": [
+        { "day": "Day 2", "time": "04:00 PM - 07:00 PM", "title": "RoboWar Championship", "description": "Judging the ultimate battle of mechanical engineering.", "venue": "Open Grounds" }
+      ]
+    },
+    {
+      "id": "elena-rostova",
+      "name": "Elena Rostova",
+      "designation": "Security Architect",
+      "organization": "Global Cyber Defense",
+      "shortBio": "Expert in zero-trust architecture and distributed systems security. Author of 'The Resilient Network Architecture'.",
+      "bio": "Elena Rostova is a security architect specializing in zero-trust architecture and distributed systems. She has consulted for governments and Fortune 500 companies on securing critical infrastructure, and is the author of the widely referenced book 'The Resilient Network Architecture'.\n\nAt NIRVAN '26, Elena will host the CTF: CyberQuest challenge and speak on emerging trends in cybersecurity.",
+      "email": "elena.rostova@example.com",
+      "website": "www.globalcyberdefense.example",
+      "sessions": [
+        { "day": "Day 2", "time": "04:00 PM - 07:00 PM", "title": "CTF: CyberQuest", "description": "Capture-the-flag cybersecurity challenge.", "venue": "Open Ground" }
+      ]
+    }
+  ],
+
+  "sponsors": {
+    "titleSponsor": [
+      { "name": "TechCorp", "logo": "techcorp.svg", "website": "https://example.com/techcorp" },
+      { "name": "Zeopto", "logo": "zeopto.svg", "website": "https://example.com/zeopto" }
+    ],
+    "goldSponsors": [
+      { "name": "DevLabs", "logo": "devlabs.svg", "website": "https://example.com/devlabs" },
+      { "name": "CloudNova", "logo": "cloudnova.svg", "website": "https://example.com/cloudnova" },
+      { "name": ".xyz", "logo": "xyz.svg", "website": "https://example.com/xyz" },
+      { "name": "lovable.Ai", "logo": "lovableai.svg", "website": "https://example.com/lovableai" },
+      { "name": "HackNest", "logo": "hacknest.svg", "website": "https://example.com/hacknest" }
+    ],
+    "communityPartners": [
+      { "name": "GitHub Community", "logo": "github-community.svg", "website": "https://github.com" },
+      { "name": "GDG", "logo": "gdg.svg", "website": "https://gdg.community.dev" }
+    ],
+    "prospectusUrl": "/assets/nirvan26-sponsorship-prospectus.pdf"
+  },
+
+  "gallery": [
+    { "id": "g01", "year": "N'24", "category": "Hackathon", "title": "N'24 - Hackathon", "image": "/assets/gallery/n24-hackathon.jpg" },
+    { "id": "g02", "year": "N'23", "category": "Keynote", "title": "N'23 - Keynote", "image": "/assets/gallery/n23-keynote.jpg" },
+    { "id": "g03", "year": "N'25", "category": "Robotics", "title": "N'25 - Robotics", "image": "/assets/gallery/n25-robotics.jpg" },
+    { "id": "g04", "year": "N'24", "category": "Workshop", "title": "N'24 - Workshop", "image": "/assets/gallery/n24-workshop.jpg" },
+    { "id": "g05", "year": "N'23", "category": "Panel", "title": "N'23 - Panel", "image": "/assets/gallery/n23-panel.jpg" },
+    { "id": "g06", "year": "N'25", "category": "Closing", "title": "N'25 - Closing", "image": "/assets/gallery/n25-closing.jpg" }
+  ],
+
+  "registrationFormFields": {
+    "general": [
+      { "name": "fullName", "label": "Full Name", "type": "text", "required": true },
+      { "name": "email", "label": "Email", "type": "email", "required": true },
+      { "name": "phone", "label": "Phone", "type": "tel", "required": true },
+      { "name": "college", "label": "College", "type": "text", "required": true },
+      { "name": "eventSelection", "label": "Event Selection", "type": "select", "options": ["hacksprint", "coderush", "ui-ux-arena", "robowar", "smart-systems-expo", "esports-arena", "ctf-cyberquest", "treasure-hunt", "tech-workshop"], "required": true },
+      { "name": "teamSize", "label": "Team Size", "type": "number", "required": false },
+      { "name": "teamMembers", "label": "Team Members (comma separated)", "type": "textarea", "required": false },
+      { "name": "agreeToTerms", "label": "I agree to the Terms and Conditions and Privacy Policy", "type": "checkbox", "required": true }
+    ],
+    "perEvent": [
+      { "name": "fullName", "label": "Full Name", "type": "text", "required": true },
+      { "name": "email", "label": "Email Address", "type": "email", "required": true },
+      { "name": "phone", "label": "Phone Number", "type": "tel", "required": true },
+      { "name": "college", "label": "College/University", "type": "text", "required": true },
+      { "name": "teamSize", "label": "Team Size", "type": "select", "options": ["1 (Solo)", "2", "3", "4", "5"], "required": true },
+      { "name": "teamMemberNames", "label": "Team Member Name(s) (if applicable)", "type": "textarea", "required": false }
+    ]
+  },
+
+  "navigation": [
+    { "label": "Home", "path": "/" },
+    { "label": "Events", "path": "/events" },
+    { "label": "Schedule", "path": "/schedule" },
+    { "label": "Speakers", "path": "/speakers" },
+    { "label": "Sponsors", "path": "/sponsors" },
+    { "label": "Gallery", "path": "/gallery" }
+  ],
+
+  "footer": {
+    "explore": [
+      { "label": "About Us", "path": "/about" },
+      { "label": "Event Categories", "path": "/events" }
+    ],
+    "support": [
+      { "label": "Contact Info", "path": "/contact" }
+    ],
+    "legal": [
+      { "label": "Legal Links", "path": "/legal" },
+      { "label": "Privacy Policy", "path": "/privacy" }
+    ],
+    "copyright": "© 2026 NIRVAN Technical Fest. All rights reserved."
+  }
+}
