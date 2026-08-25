@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>NIRVAN '26 - Speakers</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400..900&amp;family=Inter:wght@400;500;600&amp;family=JetBrains+Mono:wght@400;500&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "tertiary": "#ffb0cc",
+                        "surface-tint": "#bcc2ff",
+                        "tertiary-fixed": "#ffd9e4",
+                        "surface-container-high": "#292932",
+                        "secondary": "#d0bcff",
+                        "tertiary-fixed-dim": "#ffb0cc",
+                        "on-error": "#690005",
+                        "inverse-primary": "#3b4ed6",
+                        "on-secondary-fixed-variant": "#5516be",
+                        "surface": "#12131b",
+                        "primary-fixed-dim": "#bcc2ff",
+                        "on-primary-fixed-variant": "#1c32be",
+                        "on-background": "#e3e1ed",
+                        "surface-bright": "#383841",
+                        "on-primary-fixed": "#000c61",
+                        "surface-variant": "#34343d",
+                        "surface-dim": "#12131b",
+                        "on-tertiary-container": "#580030",
+                        "on-secondary-fixed": "#23005c",
+                        "on-tertiary": "#640038",
+                        "surface-container": "#1e1f27",
+                        "primary-container": "#7586ff",
+                        "outline-variant": "#454654",
+                        "background": "#12131b",
+                        "primary": "#bcc2ff",
+                        "inverse-surface": "#e3e1ed",
+                        "error": "#ffb4ab",
+                        "secondary-container": "#571bc1",
+                        "secondary-fixed-dim": "#d0bcff",
+                        "primary-fixed": "#dfe0ff",
+                        "on-tertiary-fixed": "#3e0021",
+                        "error-container": "#93000a",
+                        "surface-container-low": "#1a1b23",
+                        "on-secondary": "#3c0091",
+                        "on-primary": "#001999",
+                        "outline": "#8f8fa0",
+                        "on-error-container": "#ffdad6",
+                        "on-secondary-container": "#c4abff",
+                        "surface-container-highest": "#34343d",
+                        "on-surface-variant": "#c5c5d7",
+                        "on-tertiary-fixed-variant": "#8d0051",
+                        "on-primary-container": "#001587",
+                        "inverse-on-surface": "#2f3038",
+                        "tertiary-container": "#f2579e",
+                        "surface-container-lowest": "#0d0e15",
+                        "secondary-fixed": "#e9ddff",
+                        "on-surface": "#e3e1ed"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.125rem",
+                        "lg": "0.25rem",
+                        "xl": "0.5rem",
+                        "full": "0.75rem"
+                    },
+                    "spacing": {
+                        "container-max": "1280px",
+                        "gutter": "24px",
+                        "unit": "4px",
+                        "margin": "32px"
+                    },
+                    "fontFamily": {
+                        "body-lg": ["Inter"],
+                        "label-sm": ["JetBrains Mono"],
+                        "label-md": ["JetBrains Mono"],
+                        "headline-md": ["Fraunces"],
+                        "headline-lg": ["Fraunces"],
+                        "display-lg": ["Fraunces"],
+                        "headline-lg-mobile": ["Fraunces"],
+                        "body-md": ["Inter"]
+                    },
+                    "fontSize": {
+                        "body-lg": ["18px", { "lineHeight": "28px", "fontWeight": "400" }],
+                        "label-sm": ["12px", { "lineHeight": "16px", "letterSpacing": "0.1em", "fontWeight": "500" }],
+                        "label-md": ["14px", { "lineHeight": "20px", "letterSpacing": "0.05em", "fontWeight": "500" }],
+                        "headline-md": ["32px", { "lineHeight": "40px", "fontWeight": "600" }],
+                        "headline-lg": ["48px", { "lineHeight": "56px", "fontWeight": "600" }],
+                        "display-lg": ["72px", { "lineHeight": "80px", "letterSpacing": "-0.02em", "fontWeight": "700" }],
+                        "headline-lg-mobile": ["32px", { "lineHeight": "40px", "fontWeight": "600" }],
+                        "body-md": ["16px", { "lineHeight": "24px", "fontWeight": "400" }]
+                    }
+                }
+            }
+        }
+    </script>
+<style>
+        body {
+            background-color: #0A0B14;
+            color: #e3e1ed;
+        }
+        .glass-surface {
+            background: rgba(21, 23, 42, 0.8);
+            backdrop-filter: blur(12px);
+            border: 1px solid #2A2E4A;
+        }
+        .glow-accent {
+            box-shadow: inset 0 0 0 0.5px #bcc2ff;
+        }
+        .hover-lift {
+            transition: all 0.3s ease;
+        }
+        .hover-lift:hover {
+            transform: translateY(-4px);
+            background: #1E2138;
+            border-color: rgba(42, 46, 74, 0.8);
+        }
+        .card-gradient {
+            background: linear-gradient(135deg, rgba(232,184,75,0.1) 0%, rgba(21,23,42,1) 30%);
+        }
+    </style>
+</head>
+<body class="flex bg-background text-on-background font-body-md overflow-x-hidden min-h-screen">
+<!-- SideNavBar -->
+<nav class="fixed left-0 top-0 h-full flex flex-col p-margin bg-surface dark:bg-surface border-r border-outline-variant w-64 z-50">
+<div class="mb-12 flex flex-col items-center">
+<img alt="GEHU and Tech Geeks Logos" class="w-24 h-24 mb-4 object-contain rounded-sm" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAkVruvXquDgYp-c5QPQst66mB1lN-U10iu2hYSbiEEvTffL0PJZTxrQTitJrMsrNEK1uBrs5TvH-8nPxhP0iWugbxQmB-Pgp9I0_ubQ2XpmBhs_DLR5pXZ8inwC2ryK3t1KqY0k7shfYmfU3CrRTKALY_KOmuk8GmVrGyd7ByNtiOo0xFKfUXRHMukBbFt2ZTzHxP-_MlwPB6ZUIFchIrzeiscvYQTeFSzb83iqQuzNEZ5lNcTPZoa0A"/>
+<h1 class="font-headline-md text-headline-md text-primary font-bold">NIRVAN '26</h1>
+<p class="font-label-md text-label-md text-on-surface-variant">GEHU Tech Fest</p>
+</div>
+<ul class="space-y-4 flex-1 w-full">
+<li>
+<a class="flex items-center gap-4 px-4 py-3 rounded-lg text-on-surface-variant hover:text-on-surface hover:bg-surface-bright transition-all duration-200 w-full font-label-md text-label-md" href="#">
+<span class="material-symbols-outlined" data-icon="home">home</span>
+<span>Home</span>
+</a>
+</li>
+<li>
+<a class="flex items-center gap-4 px-4 py-3 rounded-lg text-on-surface-variant hover:text-on-surface hover:bg-surface-bright transition-all duration-200 w-full font-label-md text-label-md" href="#">
+<span class="material-symbols-outlined" data-icon="info">info</span>
+<span>About</span>
+</a>
+</li>
+<li>
+<a class="flex items-center gap-4 px-4 py-3 rounded-lg text-on-surface-variant hover:text-on-surface hover:bg-surface-bright transition-all duration-200 w-full font-label-md text-label-md" href="#">
+<span class="material-symbols-outlined" data-icon="event">event</span>
+<span>Events</span>
+</a>
+</li>
+<li>
+<a class="flex items-center gap-4 px-4 py-3 rounded-lg text-on-surface-variant hover:text-on-surface hover:bg-surface-bright transition-all duration-200 w-full font-label-md text-label-md" href="#">
+<span class="material-symbols-outlined" data-icon="calendar_today">calendar_today</span>
+<span>Schedule</span>
+</a>
+</li>
+<li>
+<a class="flex items-center gap-4 px-4 py-3 rounded-lg text-primary border-r-2 border-primary bg-primary-container/10 translate-x-1 transition-transform w-full font-label-md text-label-md" href="#">
+<span class="material-symbols-outlined" data-icon="groups">groups</span>
+<span>Speakers</span>
+</a>
+</li>
+<li>
+<a class="flex items-center gap-4 px-4 py-3 rounded-lg text-on-surface-variant hover:text-on-surface hover:bg-surface-bright transition-all duration-200 w-full font-label-md text-label-md" href="#">
+<span class="material-symbols-outlined" data-icon="collections">collections</span>
+<span>Gallery</span>
+</a>
+</li>
+<li>
+<a class="flex items-center gap-4 px-4 py-3 rounded-lg text-on-surface-variant hover:text-on-surface hover:bg-surface-bright transition-all duration-200 w-full font-label-md text-label-md" href="#">
+<span class="material-symbols-outlined" data-icon="mail">mail</span>
+<span>Contact</span>
+</a>
+</li>
+</ul>
+</nav>
+<!-- Main Content -->
+<main class="ml-64 flex-1 flex flex-col min-h-screen">
+<!-- TopAppBar (Mobile Only) -->
+<header class="md:hidden fixed top-0 w-full flex justify-end px-gutter h-16 items-center z-40 bg-surface/80 backdrop-blur-lg border-b border-outline-variant">
+<h1 class="font-headline-md text-headline-md text-primary font-bold mr-auto ml-4">NIRVAN '26</h1>
+<div class="flex gap-4">
+<span class="material-symbols-outlined text-on-surface-variant hover:text-primary transition-colors cursor-pointer" data-icon="facebook">qr_code_2</span>
+<span class="material-symbols-outlined text-on-surface-variant hover:text-primary transition-colors cursor-pointer" data-icon="instagram">team_drive_key</span>
+<span class="material-symbols-outlined text-on-surface-variant hover:text-primary transition-colors cursor-pointer" data-icon="linkedin">signal_cellular_alt_2_bar</span>
+</div>
+</header>
+<!-- Page Header -->
+<section class="pt-32 pb-16 px-gutter md:px-margin max-w-container-max mx-auto w-full text-center relative z-10">
+<h1 class="font-display-lg text-display-lg text-on-surface mb-6 font-bold tracking-tight">Masters of the Craft</h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-2xl mx-auto">Discover the visionary minds shaping the future of technology and innovation at NIRVAN '26.</p>
+</section>
+<!-- Speakers Grid -->
+<section class="flex-1 px-gutter md:px-margin pb-32 max-w-container-max mx-auto w-full relative z-10">
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+<!-- Speaker Card 1 -->
+<div class="glass-surface rounded-xl overflow-hidden card-gradient hover-lift flex flex-col h-full group">
+<div class="aspect-square relative overflow-hidden">
+<img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" data-alt="A striking portrait of a female tech visionary standing in a server room bathed in cinematic blue and indigo lighting. She wears a sharp, minimalist dark suit. The atmosphere is highly technical yet mysterious, capturing the 'Tech-Fantasy' aesthetic with high contrast and luminous details." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBeMUdknLSW9Odfx5EkRQeDpLdXJwAhrJaoeM7W-gR5AsZOgtkBTjQU4CkvHXr4LlDGF9nHRMJ5t6dzo4-SC4-FN8MVexKOAjrnJqDO0hyv04OdTFeo-9f4tQaI3RYcvW3jrDSlbB88e0gxNL7N3K-vkQ8AI1x6GNdz5Y43O8zagvKULVZTNcD8QoIr1wiwY6n5oDfvlR8bib6bqnPqWNpsku5ZR5PXAw6lf9lU81YcbIhSG-Pkxje0RQ"/>
+<div class="absolute inset-0 bg-gradient-to-t from-[#0A0B14] to-transparent opacity-80"></div>
+<div class="absolute bottom-0 left-0 p-6 w-full">
+<span class="inline-block px-3 py-1 text-xs font-label-sm rounded border text-inverse-primary border-inverse-primary bg-inverse-primary/5 mb-3">AI &amp; Robotics</span>
+<h3 class="font-headline-md text-headline-md text-on-surface font-semibold mb-1">Dr. Elena Rostova</h3>
+<p class="font-label-md text-label-md text-primary">Chief AI Scientist, Nexus Dynamics</p>
+</div>
+</div>
+<div class="p-6 flex-1 flex flex-col justify-between border-t border-outline-variant/30">
+<p class="font-body-md text-body-md text-on-surface-variant line-clamp-3">Pioneering neural architectures that bridge the gap between deterministic logic and intuitive problem solving. Her latest work explores symbiotic human-machine interfaces.</p>
+<button class="mt-6 font-label-md text-label-md text-primary border border-primary/50 rounded-lg py-2 px-4 w-full hover:bg-primary/10 transition-colors uppercase tracking-wider flex items-center justify-center gap-2">
+                            View Profile
+                            <span class="material-symbols-outlined text-sm" data-icon="arrow_forward">arrow_forward</span>
+</button>
+</div>
+</div>
+<!-- Speaker Card 2 -->
+<div class="glass-surface rounded-xl overflow-hidden card-gradient hover-lift flex flex-col h-full group">
+<div class="aspect-square relative overflow-hidden">
+<img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" data-alt="A portrait of a male cybersecurity expert in a sleek, dimly lit stone academy room fitted with glowing holographic screens. He is intently focused, illuminated by the golden and violet glow of data points against the dark, void-like background." src="https://lh3.googleusercontent.com/aida-public/AB6AXuD68FwpxoXiag02TJCeq6rSty941bDxkBcBC9AkAG1B0-TgUzXbz0uLaoZ2-mUN8l6p2tSh3vYM9yRO2IcbitnIvI9SQCFcc8Pk7xVHN8F1ONY2haXZIOl6qUupv7M9BquNtiDWqiXeFAGcR_bbZ_VEcV6N7ICDsodnOBF3z_yYa8X3Rg9_wFWuwQ_mYiyKNlDKhjLrF9V5_qcXqinhs25MV88VzcwALgHqcBqOMwAq-Uj4si8erXlFNQ"/>
+<div class="absolute inset-0 bg-gradient-to-t from-[#0A0B14] to-transparent opacity-80"></div>
+<div class="absolute bottom-0 left-0 p-6 w-full">
+<span class="inline-block px-3 py-1 text-xs font-label-sm rounded border text-[#E8B84B] border-[#E8B84B] bg-[#E8B84B]/5 mb-3">Cybersecurity</span>
+<h3 class="font-headline-md text-headline-md text-on-surface font-semibold mb-1">Marcus Thorne</h3>
+<p class="font-label-md text-label-md text-primary">Head of Cryptography, SecurNet</p>
+</div>
+</div>
+<div class="p-6 flex-1 flex flex-col justify-between border-t border-outline-variant/30">
+<p class="font-body-md text-body-md text-on-surface-variant line-clamp-3">A veteran in digital defense mechanisms, Marcus has redefined network security protocols using quantum-resistant algorithms designed to protect critical global infrastructure.</p>
+<button class="mt-6 font-label-md text-label-md text-primary border border-primary/50 rounded-lg py-2 px-4 w-full hover:bg-primary/10 transition-colors uppercase tracking-wider flex items-center justify-center gap-2">
+                            View Profile
+                            <span class="material-symbols-outlined text-sm" data-icon="arrow_forward">arrow_forward</span>
+</button>
+</div>
+</div>
+<!-- Speaker Card 3 -->
+<div class="glass-surface rounded-xl overflow-hidden card-gradient hover-lift flex flex-col h-full group">
+<div class="aspect-square relative overflow-hidden">
+<img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" data-alt="A dynamic portrait of a young female designer surrounded by floating, abstract digital UI elements in a dark, atmospheric setting. Soft glassmorphism effects and deep purple and indigo lighting highlight her creative and futuristic focus." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBPWrXPXqUavB45pVJ6GoaUzq-smp_x7PzuN6hgJyXSXZNhK8lfRRHT7EP6NGYnb2yp5rhUb88lrtJjxpssNfFuiYMMqX4Mw2F19uFQcbRn4vRqVPbXYDbmLaF3KgbUBaZAaJRoblIRCfC1yrbuyPwt00SNxnA8HaW0QqavQh1plARGsDBBxnR6vneC5xBxne1dVRYiqN6IhlizaduX6Ow6rF-zzFNlbLs40w2v1Hh_9DVtAGWUNm3XKQ"/>
+<div class="absolute inset-0 bg-gradient-to-t from-[#0A0B14] to-transparent opacity-80"></div>
+<div class="absolute bottom-0 left-0 p-6 w-full">
+<span class="inline-block px-3 py-1 text-xs font-label-sm rounded border text-tertiary-container border-tertiary-container bg-tertiary-container/5 mb-3">Spatial Design</span>
+<h3 class="font-headline-md text-headline-md text-on-surface font-semibold mb-1">Sarah Lin</h3>
+<p class="font-label-md text-label-md text-primary">Lead UX Architect, MetaVerse Labs</p>
+</div>
+</div>
+<div class="p-6 flex-1 flex flex-col justify-between border-t border-outline-variant/30">
+<p class="font-body-md text-body-md text-on-surface-variant line-clamp-3">Crafting immersive spatial computing experiences. Sarah's design philosophy merges tactile reality with limitless digital environments, creating seamless user journeys.</p>
+<button class="mt-6 font-label-md text-label-md text-primary border border-primary/50 rounded-lg py-2 px-4 w-full hover:bg-primary/10 transition-colors uppercase tracking-wider flex items-center justify-center gap-2">
+                            View Profile
+                            <span class="material-symbols-outlined text-sm" data-icon="arrow_forward">arrow_forward</span>
+</button>
+</div>
+</div>
+</div>
+</section>
+<!-- Footer -->
+<footer class="w-full py-20 px-margin flex flex-col md:flex-row justify-between items-center gap-8 bg-surface-container-lowest border-t border-outline-variant mt-auto relative z-20">
+<div class="flex items-center gap-4">
+<img alt="NIRVAN '26 Brand Marks" class="w-12 h-12 object-contain rounded-sm opacity-80 hover:opacity-100 transition-opacity" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAkVruvXquDgYp-c5QPQst66mB1lN-U10iu2hYSbiEEvTffL0PJZTxrQTitJrMsrNEK1uBrs5TvH-8nPxhP0iWugbxQmB-Pgp9I0_ubQ2XpmBhs_DLR5pXZ8inwC2ryK3t1KqY0k7shfYmfU3CrRTKALY_KOmuk8GmVrGyd7ByNtiOo0xFKfUXRHMukBbFt2ZTzHxP-_MlwPB6ZUIFchIrzeiscvYQTeFSzb83iqQuzNEZ5lNcTPZoa0A"/>
+<span class="font-headline-md text-headline-md text-primary font-bold">NIRVAN '26</span>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant text-center md:text-left">Hosted by Tech Geeks © 2026</p>
+<div class="flex gap-6">
+<a class="font-body-md text-body-md text-on-surface-variant hover:text-primary transition-colors opacity-80 hover:opacity-100" href="#">Privacy Policy</a>
+<a class="font-body-md text-body-md text-on-surface-variant hover:text-primary transition-colors opacity-80 hover:opacity-100" href="#">Terms of Service</a>
+<a class="font-body-md text-body-md text-on-surface-variant hover:text-primary transition-colors opacity-80 hover:opacity-100" href="#">Code of Conduct</a>
+</div>
+</footer>
+<!-- Floating Quick Nav Pill -->
+<div class="fixed bottom-8 left-1/2 -translate-x-1/2 ml-32 z-50 glass-surface rounded-full px-6 py-3 flex gap-8 shadow-2xl glow-accent">
+<a class="flex flex-col items-center text-primary transition-colors group" href="#">
+<span class="material-symbols-outlined mb-1 group-hover:-translate-y-1 transition-transform" data-icon="groups">groups</span>
+<span class="font-label-sm text-[10px] uppercase tracking-widest font-bold">Keynotes</span>
+</a>
+<a class="flex flex-col items-center text-on-surface-variant hover:text-primary transition-colors group" href="#">
+<span class="material-symbols-outlined mb-1 group-hover:-translate-y-1 transition-transform" data-icon="code">code</span>
+<span class="font-label-sm text-[10px] uppercase tracking-widest">Workshops</span>
+</a>
+<a class="flex flex-col items-center text-on-surface-variant hover:text-primary transition-colors group" href="#">
+<span class="material-symbols-outlined mb-1 group-hover:-translate-y-1 transition-transform" data-icon="forum">forum</span>
+<span class="font-label-sm text-[10px] uppercase tracking-widest">Panels</span>
+</a>
+</div>
+</main>
+</body></html>

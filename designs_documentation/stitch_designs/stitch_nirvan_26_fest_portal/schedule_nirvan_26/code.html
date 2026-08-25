@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>NIRVAN '26 - Schedule</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400..700&amp;family=Inter:wght@400;500;600&amp;family=JetBrains+Mono:wght@400;500&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                            "tertiary": "#ffb0cc",
+                            "surface-tint": "#bcc2ff",
+                            "tertiary-fixed": "#ffd9e4",
+                            "surface-container-high": "#292932",
+                            "secondary": "#d0bcff",
+                            "tertiary-fixed-dim": "#ffb0cc",
+                            "on-error": "#690005",
+                            "inverse-primary": "#3b4ed6",
+                            "on-secondary-fixed-variant": "#5516be",
+                            "surface": "#12131b",
+                            "primary-fixed-dim": "#bcc2ff",
+                            "on-primary-fixed-variant": "#1c32be",
+                            "on-background": "#e3e1ed",
+                            "surface-bright": "#383841",
+                            "on-primary-fixed": "#000c61",
+                            "surface-variant": "#34343d",
+                            "surface-dim": "#12131b",
+                            "on-tertiary-container": "#580030",
+                            "on-secondary-fixed": "#23005c",
+                            "on-tertiary": "#640038",
+                            "surface-container": "#1e1f27",
+                            "primary-container": "#7586ff",
+                            "outline-variant": "#454654",
+                            "background": "#12131b",
+                            "primary": "#bcc2ff",
+                            "inverse-surface": "#e3e1ed",
+                            "error": "#ffb4ab",
+                            "secondary-container": "#571bc1",
+                            "secondary-fixed-dim": "#d0bcff",
+                            "primary-fixed": "#dfe0ff",
+                            "on-tertiary-fixed": "#3e0021",
+                            "error-container": "#93000a",
+                            "surface-container-low": "#1a1b23",
+                            "on-secondary": "#3c0091",
+                            "on-primary": "#001999",
+                            "outline": "#8f8fa0",
+                            "on-error-container": "#ffdad6",
+                            "on-secondary-container": "#c4abff",
+                            "surface-container-highest": "#34343d",
+                            "on-surface-variant": "#c5c5d7",
+                            "on-tertiary-fixed-variant": "#8d0051",
+                            "on-primary-container": "#001587",
+                            "inverse-on-surface": "#2f3038",
+                            "tertiary-container": "#f2579e",
+                            "surface-container-lowest": "#0d0e15",
+                            "secondary-fixed": "#e9ddff",
+                            "on-surface": "#e3e1ed"
+                    },
+                    "borderRadius": {
+                            "DEFAULT": "0.125rem",
+                            "lg": "0.25rem",
+                            "xl": "0.5rem",
+                            "full": "0.75rem"
+                    },
+                    "spacing": {
+                            "container-max": "1280px",
+                            "gutter": "24px",
+                            "unit": "4px",
+                            "margin": "32px"
+                    },
+                    "fontFamily": {
+                            "body-lg": ["Inter"],
+                            "label-sm": ["JetBrains Mono"],
+                            "label-md": ["JetBrains Mono"],
+                            "headline-md": ["Fraunces"],
+                            "headline-lg": ["Fraunces"],
+                            "display-lg": ["Fraunces"],
+                            "headline-lg-mobile": ["Fraunces"],
+                            "body-md": ["Inter"]
+                    },
+                    "fontSize": {
+                            "body-lg": ["18px", {"lineHeight": "28px", "fontWeight": "400"}],
+                            "label-sm": ["12px", {"lineHeight": "16px", "letterSpacing": "0.1em", "fontWeight": "500"}],
+                            "label-md": ["14px", {"lineHeight": "20px", "letterSpacing": "0.05em", "fontWeight": "500"}],
+                            "headline-md": ["32px", {"lineHeight": "40px", "fontWeight": "600"}],
+                            "headline-lg": ["48px", {"lineHeight": "56px", "fontWeight": "600"}],
+                            "display-lg": ["72px", {"lineHeight": "80px", "letterSpacing": "-0.02em", "fontWeight": "700"}],
+                            "headline-lg-mobile": ["32px", {"lineHeight": "40px", "fontWeight": "600"}],
+                            "body-md": ["16px", {"lineHeight": "24px", "fontWeight": "400"}]
+                    }
+                }
+            }
+        }
+    </script>
+<style>
+        body {
+            background-color: #0A0B14; /* Background Void */
+            color: #e3e1ed;
+        }
+        
+        .hairline-border {
+            border: 1px solid #2A2E4A;
+        }
+
+        .gold-border {
+            border: 1px solid #E8B84B;
+        }
+
+        .gold-text {
+            color: #E8B84B;
+        }
+
+        .glass-panel {
+            background-color: #15172A;
+            border: 1px solid #2A2E4A;
+        }
+
+        .glass-panel:hover {
+            background-color: #1E2138;
+            border-color: rgba(42, 46, 74, 0.8);
+        }
+
+        .btn-primary {
+            color: #E8B84B;
+            border: 1px solid #E8B84B;
+            background-color: transparent;
+            transition: all 0.3s ease;
+        }
+
+        .btn-primary:hover {
+            box-shadow: 0 0 4px #E8B84B;
+        }
+        
+        .card-frame {
+            border: 1px solid #2A2E4A;
+            background: linear-gradient(135deg, rgba(232, 184, 75, 0.05) 0%, transparent 40%);
+            position: relative;
+        }
+        
+        .card-frame::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 8px;
+            height: 8px;
+            border-top: 1px solid #E8B84B;
+            border-left: 1px solid #E8B84B;
+        }
+
+        .tag-tech { color: #818cf8; border: 1px solid #818cf8; background-color: rgba(129, 140, 248, 0.05); }
+        .tag-design { color: #a78bfa; border: 1px solid #a78bfa; background-color: rgba(167, 139, 250, 0.05); }
+        .tag-gaming { color: #f472b6; border: 1px solid #f472b6; background-color: rgba(244, 114, 182, 0.05); }
+        .tag-fun { color: #E8B84B; border: 1px solid #E8B84B; background-color: rgba(232, 184, 75, 0.05); }
+
+        .timeline-line {
+            width: 1px;
+            background: linear-gradient(to bottom, #E8B84B 0%, #2A2E4A 100%);
+        }
+        
+        .timeline-node {
+            width: 9px;
+            height: 9px;
+            background-color: #0A0B14;
+            border: 1px solid #E8B84B;
+            border-radius: 50%;
+            box-shadow: 0 0 4px rgba(232, 184, 75, 0.5);
+        }
+
+        .h-void-padding {
+            padding-top: 120px;
+            padding-bottom: 120px;
+        }
+    </style>
+</head>
+<body class="font-body-md text-body-md antialiased min-h-screen flex flex-col md:flex-row">
+<!-- TopAppBar (Mobile Only) -->
+<header class="md:hidden fixed top-0 w-full flex justify-between items-center px-4 h-16 z-40 bg-surface/80 backdrop-blur-lg border-b border-outline-variant">
+<div class="flex items-center gap-2">
+<img alt="NIRVAN '26" class="h-8 w-8 object-contain" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAkVruvXquDgYp-c5QPQst66mB1lN-U10iu2hYSbiEEvTffL0PJZTxrQTitJrMsrNEK1uBrs5TvH-8nPxhP0iWugbxQmB-Pgp9I0_ubQ2XpmBhs_DLR5pXZ8inwC2ryK3t1KqY0k7shfYmfU3CrRTKALY_KOmuk8GmVrGyd7ByNtiOo0xFKfUXRHMukBbFt2ZTzHxP-_MlwPB6ZUIFchIrzeiscvYQTeFSzb83iqQuzNEZ5lNcTPZoa0A"/>
+<span class="font-headline-md text-headline-md text-primary font-bold">NIRVAN '26</span>
+</div>
+<button class="text-on-surface-variant">
+<span class="material-symbols-outlined">menu</span>
+</button>
+</header>
+<!-- SideNavBar (Desktop) -->
+<nav class="hidden md:flex fixed left-0 top-0 h-full w-64 flex-col p-margin bg-surface dark:bg-surface border-r border-outline-variant z-40">
+<div class="flex flex-col items-center mb-12 text-center">
+<img alt="GEHU and Tech Geeks Logos" class="w-16 h-16 mb-4 object-contain" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAkVruvXquDgYp-c5QPQst66mB1lN-U10iu2hYSbiEEvTffL0PJZTxrQTitJrMsrNEK1uBrs5TvH-8nPxhP0iWugbxQmB-Pgp9I0_ubQ2XpmBhs_DLR5pXZ8inwC2ryK3t1KqY0k7shfYmfU3CrRTKALY_KOmuk8GmVrGyd7ByNtiOo0xFKfUXRHMukBbFt2ZTzHxP-_MlwPB6ZUIFchIrzeiscvYQTeFSzb83iqQuzNEZ5lNcTPZoa0A"/>
+<h1 class="font-headline-md text-headline-md text-primary font-bold">NIRVAN '26</h1>
+<p class="font-label-sm text-label-sm text-on-surface-variant mt-1">GEHU Tech Fest</p>
+</div>
+<ul class="flex flex-col gap-2 flex-grow">
+<li>
+<a class="flex items-center gap-4 px-4 py-3 rounded-lg text-on-surface-variant hover:text-on-surface hover:bg-surface-bright transition-all duration-200" href="#">
+<span class="material-symbols-outlined">home</span>
+<span class="font-label-md text-label-md">Home</span>
+</a>
+</li>
+<li>
+<a class="flex items-center gap-4 px-4 py-3 rounded-lg text-on-surface-variant hover:text-on-surface hover:bg-surface-bright transition-all duration-200" href="#">
+<span class="material-symbols-outlined">info</span>
+<span class="font-label-md text-label-md">About</span>
+</a>
+</li>
+<li>
+<a class="flex items-center gap-4 px-4 py-3 rounded-lg text-on-surface-variant hover:text-on-surface hover:bg-surface-bright transition-all duration-200" href="#">
+<span class="material-symbols-outlined">event</span>
+<span class="font-label-md text-label-md">Events</span>
+</a>
+</li>
+<li>
+<a class="flex items-center gap-4 px-4 py-3 rounded-lg text-primary border-r-2 border-primary bg-primary-container/10 translate-x-1 transition-transform" href="#">
+<span class="material-symbols-outlined">calendar_today</span>
+<span class="font-label-md text-label-md">Schedule</span>
+</a>
+</li>
+<li>
+<a class="flex items-center gap-4 px-4 py-3 rounded-lg text-on-surface-variant hover:text-on-surface hover:bg-surface-bright transition-all duration-200" href="#">
+<span class="material-symbols-outlined">groups</span>
+<span class="font-label-md text-label-md">Speakers</span>
+</a>
+</li>
+<li>
+<a class="flex items-center gap-4 px-4 py-3 rounded-lg text-on-surface-variant hover:text-on-surface hover:bg-surface-bright transition-all duration-200" href="#">
+<span class="material-symbols-outlined">collections</span>
+<span class="font-label-md text-label-md">Gallery</span>
+</a>
+</li>
+<li>
+<a class="flex items-center gap-4 px-4 py-3 rounded-lg text-on-surface-variant hover:text-on-surface hover:bg-surface-bright transition-all duration-200" href="#">
+<span class="material-symbols-outlined">mail</span>
+<span class="font-label-md text-label-md">Contact</span>
+</a>
+</li>
+</ul>
+</nav>
+<!-- Main Content Canvas -->
+<main class="flex-grow md:ml-64 w-full pt-16 md:pt-0">
+<div class="max-w-5xl mx-auto px-4 md:px-gutter h-void-padding">
+<!-- Header Section -->
+<div class="mb-16">
+<h2 class="font-display-lg text-display-lg text-primary mb-4">Event Schedule</h2>
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-2xl">Plan your journey through NIRVAN '26. A timeline of innovation, scholarship, and technological discovery.</p>
+</div>
+<!-- Day Tabs (Floating Pill) -->
+<div class="sticky top-20 md:top-8 z-30 flex justify-center mb-16">
+<div class="flex gap-2 p-1 bg-surface-container-high rounded-full border border-outline-variant backdrop-blur-md">
+<button class="px-6 py-2 rounded-full font-label-md text-label-md btn-primary">Day 1</button>
+<button class="px-6 py-2 rounded-full font-label-md text-label-md text-on-surface-variant hover:text-on-surface transition-colors">Day 2</button>
+</div>
+</div>
+<!-- Vertical Timeline -->
+<div class="relative flex flex-col gap-8">
+<!-- Timeline Line -->
+<div class="absolute left-[80px] md:left-[120px] top-4 bottom-0 timeline-line"></div>
+<!-- Timeline Item 1 -->
+<div class="flex gap-6 md:gap-12 relative group cursor-pointer hover:translate-x-1 transition-transform duration-300">
+<div class="w-[60px] md:w-[100px] flex-shrink-0 text-right pt-4">
+<span class="font-label-md text-label-md text-on-surface-variant">09:00</span>
+</div>
+<div class="absolute left-[76px] md:left-[116px] top-6 timeline-node group-hover:scale-150 transition-transform"></div>
+<div class="flex-grow card-frame p-6 rounded-lg glass-panel">
+<div class="flex justify-between items-start mb-2">
+<h3 class="font-headline-md text-headline-md text-on-surface">Opening Ceremony</h3>
+<span class="px-3 py-1 text-[10px] uppercase font-bold tracking-wider rounded-full tag-tech font-label-sm text-label-sm">Keynote</span>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant mb-4">Welcome address and introduction to the overarching themes of NIRVAN '26.</p>
+<div class="flex items-center gap-2 text-on-surface-variant font-label-sm text-label-sm">
+<span class="material-symbols-outlined text-[16px]">location_on</span>
+<span>Main Auditorium</span>
+</div>
+</div>
+</div>
+<!-- Timeline Item 2 -->
+<div class="flex gap-6 md:gap-12 relative group cursor-pointer hover:translate-x-1 transition-transform duration-300">
+<div class="w-[60px] md:w-[100px] flex-shrink-0 text-right pt-4">
+<span class="font-label-md text-label-md text-on-surface-variant">10:30</span>
+</div>
+<div class="absolute left-[76px] md:left-[116px] top-6 timeline-node group-hover:scale-150 transition-transform"></div>
+<div class="flex-grow card-frame p-6 rounded-lg glass-panel">
+<div class="flex justify-between items-start mb-2">
+<h3 class="font-headline-md text-headline-md text-on-surface">AI &amp; The Future of Scholarship</h3>
+<span class="px-3 py-1 text-[10px] uppercase font-bold tracking-wider rounded-full tag-tech font-label-sm text-label-sm">Tech</span>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant mb-4">A deep dive into how generative AI is reshaping academic research and historical documentation.</p>
+<div class="flex items-center gap-2 text-on-surface-variant font-label-sm text-label-sm">
+<span class="material-symbols-outlined text-[16px]">location_on</span>
+<span>Hall B</span>
+</div>
+</div>
+</div>
+<!-- Timeline Item 3 -->
+<div class="flex gap-6 md:gap-12 relative group cursor-pointer hover:translate-x-1 transition-transform duration-300">
+<div class="w-[60px] md:w-[100px] flex-shrink-0 text-right pt-4">
+<span class="font-label-md text-label-md text-on-surface-variant">13:00</span>
+</div>
+<div class="absolute left-[76px] md:left-[116px] top-6 timeline-node group-hover:scale-150 transition-transform"></div>
+<div class="flex-grow card-frame p-6 rounded-lg glass-panel">
+<div class="flex justify-between items-start mb-2">
+<h3 class="font-headline-md text-headline-md text-on-surface">UI/UX: Designing Artifacts</h3>
+<span class="px-3 py-1 text-[10px] uppercase font-bold tracking-wider rounded-full tag-design font-label-sm text-label-sm">Design</span>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant mb-4">Workshop on creating tactile, meaningful interfaces in an increasingly abstract digital world.</p>
+<div class="flex items-center gap-2 text-on-surface-variant font-label-sm text-label-sm">
+<span class="material-symbols-outlined text-[16px]">location_on</span>
+<span>Design Lab 1</span>
+</div>
+</div>
+</div>
+<!-- Timeline Item 4 -->
+<div class="flex gap-6 md:gap-12 relative group cursor-pointer hover:translate-x-1 transition-transform duration-300">
+<div class="w-[60px] md:w-[100px] flex-shrink-0 text-right pt-4">
+<span class="font-label-md text-label-md text-on-surface-variant">15:30</span>
+</div>
+<div class="absolute left-[76px] md:left-[116px] top-6 timeline-node group-hover:scale-150 transition-transform"></div>
+<div class="flex-grow card-frame p-6 rounded-lg glass-panel">
+<div class="flex justify-between items-start mb-2">
+<h3 class="font-headline-md text-headline-md text-on-surface">Esports Tournament: Qualifiers</h3>
+<span class="px-3 py-1 text-[10px] uppercase font-bold tracking-wider rounded-full tag-gaming font-label-sm text-label-sm">Gaming</span>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant mb-4">Initial rounds for the flagship gaming competition. High-stakes tactical gameplay.</p>
+<div class="flex items-center gap-2 text-on-surface-variant font-label-sm text-label-sm">
+<span class="material-symbols-outlined text-[16px]">location_on</span>
+<span>Gaming Arena</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Footer -->
+<footer class="w-full py-20 px-margin flex flex-col md:flex-row justify-between items-center gap-8 bg-surface-container-lowest border-t border-outline-variant mt-20">
+<div class="flex items-center gap-4">
+<img alt="Hosted by Tech Geeks © 2026" class="w-10 h-10 object-contain opacity-80 hover:opacity-100 transition-opacity" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAkVruvXquDgYp-c5QPQst66mB1lN-U10iu2hYSbiEEvTffL0PJZTxrQTitJrMsrNEK1uBrs5TvH-8nPxhP0iWugbxQmB-Pgp9I0_ubQ2XpmBhs_DLR5pXZ8inwC2ryK3t1KqY0k7shfYmfU3CrRTKALY_KOmuk8GmVrGyd7ByNtiOo0xFKfUXRHMukBbFt2ZTzHxP-_MlwPB6ZUIFchIrzeiscvYQTeFSzb83iqQuzNEZ5lNcTPZoa0A"/>
+<span class="font-body-md text-body-md text-on-surface-variant">Hosted by Tech Geeks © 2026</span>
+</div>
+<div class="flex gap-6">
+<a class="font-body-md text-body-md text-on-surface-variant hover:text-primary transition-colors" href="#">Privacy Policy</a>
+<a class="font-body-md text-body-md text-on-surface-variant hover:text-primary transition-colors" href="#">Terms of Service</a>
+<a class="font-body-md text-body-md text-on-surface-variant hover:text-primary transition-colors" href="#">Code of Conduct</a>
+</div>
+</footer>
+</main>
+</body></html>

@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>NIRVAN '26 - Home</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;700&amp;family=Inter:wght@400&amp;family=JetBrains+Mono:wght@500&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+          darkMode: "class",
+          theme: {
+            extend: {
+              "colors": {
+                      "tertiary": "#ffb0cc",
+                      "surface-tint": "#bcc2ff",
+                      "tertiary-fixed": "#ffd9e4",
+                      "surface-container-high": "#292932",
+                      "secondary": "#d0bcff",
+                      "tertiary-fixed-dim": "#ffb0cc",
+                      "on-error": "#690005",
+                      "inverse-primary": "#3b4ed6",
+                      "on-secondary-fixed-variant": "#5516be",
+                      "surface": "#12131b",
+                      "primary-fixed-dim": "#bcc2ff",
+                      "on-primary-fixed-variant": "#1c32be",
+                      "on-background": "#e3e1ed",
+                      "surface-bright": "#383841",
+                      "on-primary-fixed": "#000c61",
+                      "surface-variant": "#34343d",
+                      "surface-dim": "#12131b",
+                      "on-tertiary-container": "#580030",
+                      "on-secondary-fixed": "#23005c",
+                      "on-tertiary": "#640038",
+                      "surface-container": "#1e1f27",
+                      "primary-container": "#7586ff",
+                      "outline-variant": "#454654",
+                      "background": "#12131b",
+                      "primary": "#bcc2ff",
+                      "inverse-surface": "#e3e1ed",
+                      "error": "#ffb4ab",
+                      "secondary-container": "#571bc1",
+                      "secondary-fixed-dim": "#d0bcff",
+                      "primary-fixed": "#dfe0ff",
+                      "on-tertiary-fixed": "#3e0021",
+                      "error-container": "#93000a",
+                      "surface-container-low": "#1a1b23",
+                      "on-secondary": "#3c0091",
+                      "on-primary": "#001999",
+                      "outline": "#8f8fa0",
+                      "on-error-container": "#ffdad6",
+                      "on-secondary-container": "#c4abff",
+                      "surface-container-highest": "#34343d",
+                      "on-surface-variant": "#c5c5d7",
+                      "on-tertiary-fixed-variant": "#8d0051",
+                      "on-primary-container": "#001587",
+                      "inverse-on-surface": "#2f3038",
+                      "tertiary-container": "#f2579e",
+                      "surface-container-lowest": "#0d0e15",
+                      "secondary-fixed": "#e9ddff",
+                      "on-surface": "#e3e1ed"
+              },
+              "borderRadius": {
+                      "DEFAULT": "0.125rem",
+                      "lg": "0.25rem",
+                      "xl": "0.5rem",
+                      "full": "0.75rem"
+              },
+              "spacing": {
+                      "container-max": "1280px",
+                      "gutter": "24px",
+                      "unit": "4px",
+                      "margin": "32px"
+              },
+              "fontFamily": {
+                      "body-lg": ["Inter"],
+                      "label-sm": ["JetBrains Mono"],
+                      "label-md": ["JetBrains Mono"],
+                      "headline-md": ["Fraunces"],
+                      "headline-lg": ["Fraunces"],
+                      "display-lg": ["Fraunces"],
+                      "headline-lg-mobile": ["Fraunces"],
+                      "body-md": ["Inter"]
+              },
+              "fontSize": {
+                      "body-lg": ["18px", {"lineHeight": "28px", "fontWeight": "400"}],
+                      "label-sm": ["12px", {"lineHeight": "16px", "letterSpacing": "0.1em", "fontWeight": "500"}],
+                      "label-md": ["14px", {"lineHeight": "20px", "letterSpacing": "0.05em", "fontWeight": "500"}],
+                      "headline-md": ["32px", {"lineHeight": "40px", "fontWeight": "600"}],
+                      "headline-lg": ["48px", {"lineHeight": "56px", "fontWeight": "600"}],
+                      "display-lg": ["72px", {"lineHeight": "80px", "letterSpacing": "-0.02em", "fontWeight": "700"}],
+                      "headline-lg-mobile": ["32px", {"lineHeight": "40px", "fontWeight": "600"}],
+                      "body-md": ["16px", {"lineHeight": "24px", "fontWeight": "400"}]
+              }
+      },
+          },
+        }
+      </script>
+<style>
+        .glow-gold { box-shadow: 0 0 4px #E8B84B; }
+        .hairline-border { border: 1px solid #2A2E4A; }
+        .metallic-frame { box-shadow: inset 0 0 0 0.5px #E8B84B; }
+        .card-bg-gradient { background: linear-gradient(135deg, rgba(232, 184, 75, 0.1) 0%, transparent 40%); }
+      </style>
+</head>
+<body class="bg-[#0A0B14] text-on-background font-body-lg min-h-screen overflow-x-hidden selection:bg-primary-container selection:text-on-primary-container">
+<!-- TopAppBar -->
+<header class="fixed top-0 right-0 w-full md:w-[calc(100%-256px)] flex justify-between md:justify-end px-gutter h-16 items-center z-40 bg-surface/80 backdrop-blur-lg border-b border-outline-variant text-primary font-label-md text-label-md">
+<div class="md:hidden font-headline-md text-headline-md text-primary font-bold">NIRVAN '26</div>
+<div class="flex items-center gap-4">
+<span class="material-symbols-outlined text-on-surface-variant hover:text-primary transition-colors cursor-pointer" data-icon="facebook">qr_code_2</span>
+<span class="material-symbols-outlined text-on-surface-variant hover:text-primary transition-colors cursor-pointer" data-icon="instagram">team_drive_key</span>
+<span class="material-symbols-outlined text-on-surface-variant hover:text-primary transition-colors cursor-pointer" data-icon="linkedin">signal_cellular_alt_2_bar</span>
+</div>
+</header>
+<!-- SideNavBar (Desktop) -->
+<nav class="hidden md:flex fixed left-0 top-0 h-full w-64 bg-surface dark:bg-surface border-r border-outline-variant flex-col p-margin z-50">
+<div class="mb-12 flex flex-col items-start gap-4">
+<img alt="GEHU and Tech Geeks Logos" class="h-16 w-16 object-contain" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAkVruvXquDgYp-c5QPQst66mB1lN-U10iu2hYSbiEEvTffL0PJZTxrQTitJrMsrNEK1uBrs5TvH-8nPxhP0iWugbxQmB-Pgp9I0_ubQ2XpmBhs_DLR5pXZ8inwC2ryK3t1KqY0k7shfYmfU3CrRTKALY_KOmuk8GmVrGyd7ByNtiOo0xFKfUXRHMukBbFt2ZTzHxP-_MlwPB6ZUIFchIrzeiscvYQTeFSzb83iqQuzNEZ5lNcTPZoa0A"/>
+<div>
+<h1 class="font-headline-md text-headline-md text-primary font-bold tracking-tight">NIRVAN '26</h1>
+<p class="font-label-sm text-label-sm text-on-surface-variant mt-1">GEHU Tech Fest</p>
+</div>
+</div>
+<ul class="flex flex-col gap-2 flex-grow">
+<li>
+<a class="flex items-center gap-3 px-4 py-3 rounded-DEFAULT text-primary border-r-2 border-primary bg-primary-container/10 font-label-md text-label-md translate-x-1 transition-transform" href="#">
+<span class="material-symbols-outlined" data-icon="home" data-weight="fill" style="font-variation-settings: 'FILL' 1;">home</span>
+                    Home
+                </a>
+</li>
+<li>
+<a class="flex items-center gap-3 px-4 py-3 rounded-DEFAULT text-on-surface-variant hover:text-on-surface hover:bg-surface-bright transition-all duration-200 font-label-md text-label-md" href="#">
+<span class="material-symbols-outlined" data-icon="info">info</span>
+                    About
+                </a>
+</li>
+<li>
+<a class="flex items-center gap-3 px-4 py-3 rounded-DEFAULT text-on-surface-variant hover:text-on-surface hover:bg-surface-bright transition-all duration-200 font-label-md text-label-md" href="#">
+<span class="material-symbols-outlined" data-icon="event">event</span>
+                    Events
+                </a>
+</li>
+<li>
+<a class="flex items-center gap-3 px-4 py-3 rounded-DEFAULT text-on-surface-variant hover:text-on-surface hover:bg-surface-bright transition-all duration-200 font-label-md text-label-md" href="#">
+<span class="material-symbols-outlined" data-icon="calendar_today">calendar_today</span>
+                    Schedule
+                </a>
+</li>
+<li>
+<a class="flex items-center gap-3 px-4 py-3 rounded-DEFAULT text-on-surface-variant hover:text-on-surface hover:bg-surface-bright transition-all duration-200 font-label-md text-label-md" href="#">
+<span class="material-symbols-outlined" data-icon="groups">groups</span>
+                    Speakers
+                </a>
+</li>
+<li>
+<a class="flex items-center gap-3 px-4 py-3 rounded-DEFAULT text-on-surface-variant hover:text-on-surface hover:bg-surface-bright transition-all duration-200 font-label-md text-label-md" href="#">
+<span class="material-symbols-outlined" data-icon="collections">collections</span>
+                    Gallery
+                </a>
+</li>
+<li>
+<a class="flex items-center gap-3 px-4 py-3 rounded-DEFAULT text-on-surface-variant hover:text-on-surface hover:bg-surface-bright transition-all duration-200 font-label-md text-label-md" href="#">
+<span class="material-symbols-outlined" data-icon="mail">mail</span>
+                    Contact
+                </a>
+</li>
+</ul>
+</nav>
+<!-- Main Content Area -->
+<main class="md:ml-64 pt-16 min-h-screen pb-32">
+<!-- Hero Section -->
+<section class="relative h-[85vh] w-full flex flex-col justify-center px-6 md:px-12 lg:px-24">
+<div class="absolute inset-0 z-0 overflow-hidden">
+<div class="absolute inset-0 bg-gradient-to-t from-[#0A0B14] via-[#0A0B14]/60 to-transparent z-10"></div>
+<div class="w-full h-full bg-cover bg-center absolute inset-0 opacity-40 mix-blend-luminosity" data-alt="A cinematic, ultra-high-definition establishing shot of an ancient stone academy at night, meticulously retrofitted with glowing, advanced technological wires and luminous data pathways. The architecture is heavy, gothic, and solemn, constructed from dark, textured slate and obsidian. Thick bundles of fiber-optic cables, pulsating with deep indigo and vibrant gold light, snake up the stone pillars and across the archways. The lighting is intensely dramatic, with deep, velvety shadows and bright, sharp highlights creating a moody, tech-fantasy atmosphere. The color palette is strictly deep nocturnal blacks and blues, punctuated by the luminous gold and indigo accents. The overall aesthetic is a synthesis of historical scholarship and futuristic innovation, rendered with photorealistic clarity and high-contrast glassmorphism details." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuAUvi45i4yhCrNpIpmyubyqQe5N9QTiMQ2yewgZmmDNPAAdjfZnt06ji8WLRUR0tqKPEBYcElUyBKa1AM7NQLLW4XMT5z_E1k2V_kSpx_L_KkZCFXFC842y7ETcEcQ-LmSlKngTcn_X1E9I7BbMDzhiVVg4zyrwIyR-pkI2kpBlQ2pQniqYhXTfeUokztX_U2V1l8Vhhf3fgJxXC5gMXWxLwWEADq0h4KNtmzWneqj3RyzWMuEnk1jbPQ')"></div>
+</div>
+<div class="relative z-20 max-w-4xl mt-16">
+<h2 class="font-label-sm text-label-sm text-primary tracking-widest uppercase mb-4 opacity-80">Annual Tech Fest</h2>
+<h1 class="font-display-lg text-display-lg text-transparent bg-clip-text bg-gradient-to-r from-on-background via-[#E8B84B] to-primary mb-6 leading-tight">Where Ideas<br/>Become Innovation</h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant mb-10 max-w-2xl border-l-2 border-[#2A2E4A] pl-4">Join us for three days of technological exploration, competitive coding, and visionary talks within the stone walls of GEHU.</p>
+<div class="flex flex-wrap gap-6 mb-16">
+<button class="bg-[#E8B84B]/10 border border-[#E8B84B] text-[#E8B84B] px-8 py-4 rounded-DEFAULT font-label-md text-label-md uppercase tracking-wider hover:bg-[#E8B84B]/20 glow-gold transition-all duration-300 flex items-center gap-2">
+                        Register Now
+                        <span class="material-symbols-outlined text-sm" data-icon="arrow_forward">arrow_forward</span>
+</button>
+<button class="bg-primary-container text-on-primary-container px-8 py-4 rounded-DEFAULT font-label-md text-label-md uppercase tracking-wider hover:bg-primary transition-colors flex items-center gap-2 shadow-[0_0_15px_rgba(117,134,255,0.3)]">
+                        Explore Events
+                    </button>
+</div>
+<div class="flex gap-12 font-label-md text-label-md text-on-surface-variant">
+<div class="flex items-center gap-3">
+<span class="material-symbols-outlined text-primary" data-icon="calendar_month">calendar_month</span>
+<span>Nov 12 - 14, 2026</span>
+</div>
+<div class="flex items-center gap-3">
+<span class="material-symbols-outlined text-primary" data-icon="location_on">location_on</span>
+<span>GEHU Campus</span>
+</div>
+</div>
+</div>
+</section>
+<!-- Countdown Strip -->
+<section class="border-y border-[#2A2E4A] bg-[#15172A]/50 py-8 px-6 md:px-12 lg:px-24 flex flex-col md:flex-row justify-between items-center gap-8 backdrop-blur-sm relative z-30">
+<h3 class="font-headline-md text-headline-md text-on-background w-full md:w-auto text-center md:text-left">Initiation In</h3>
+<div class="flex gap-6 font-label-md text-label-md text-primary">
+<div class="flex flex-col items-center hairline-border bg-[#0A0B14] p-4 rounded-lg min-w-[80px]">
+<span class="text-3xl font-bold mb-1" id="days">45</span>
+<span class="text-[10px] text-on-surface-variant uppercase tracking-widest">Days</span>
+</div>
+<div class="flex flex-col items-center hairline-border bg-[#0A0B14] p-4 rounded-lg min-w-[80px]">
+<span class="text-3xl font-bold mb-1" id="hours">12</span>
+<span class="text-[10px] text-on-surface-variant uppercase tracking-widest">Hours</span>
+</div>
+<div class="flex flex-col items-center hairline-border bg-[#0A0B14] p-4 rounded-lg min-w-[80px]">
+<span class="text-3xl font-bold mb-1" id="mins">34</span>
+<span class="text-[10px] text-on-surface-variant uppercase tracking-widest">Mins</span>
+</div>
+</div>
+</section>
+<!-- Featured Events (Bento) -->
+<section class="py-24 px-6 md:px-12 lg:px-24 relative z-20">
+<div class="flex justify-between items-end mb-16">
+<div>
+<h2 class="font-headline-lg text-headline-lg text-on-background mb-2">Featured Artifacts</h2>
+<p class="font-body-md text-body-md text-on-surface-variant">Discover the prime directives of this year's gathering.</p>
+</div>
+<a class="hidden md:flex items-center gap-2 text-primary font-label-sm text-label-sm uppercase hover:text-[#E8B84B] transition-colors" href="#">
+                    View All Schedule <span class="material-symbols-outlined text-sm" data-icon="arrow_outward">arrow_outward</span>
+</a>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-6 auto-rows-[300px]">
+<!-- Card 1 -->
+<div class="md:col-span-2 relative group bg-[#15172A] rounded-xl hairline-border overflow-hidden card-bg-gradient transition-all duration-300 hover:bg-[#1E2138]">
+<div class="absolute inset-0 opacity-20 group-hover:opacity-40 transition-opacity duration-500">
+<div class="w-full h-full bg-cover bg-center" data-alt="A dynamic, high-contrast shot of a massive, glowing holographic projection of complex code and geometric algorithms hovering above a dark, polished obsidian floor. The scene is illuminated by sharp indigo and violet neon lights that reflect off the stone surfaces. Several hooded figures in the background observe the projection, adding a sense of scale and mystique. The overall mood is intense, cerebral, and cutting-edge tech-fantasy." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuArSzYV-wE0enwGDRgZdvZzKQ79ivVjq26g_06iTlb5pzI81svjlZE7T7192MVD8I5mM7rk6KzLlxPqTU6p9fxttLsXzgZwCWCCM50gFei0uFAzLgRbMOVHWoiRRS96jK0KSLpA7EPBc7A9SolJExAxYm9l_e7fa1ky-ElSZCcJE3IWuMJ49nRuVwNz5gwfMlfVUw4Dun5KZPKE3OLcUnIRZPQ0vJ6KpfOB3FJ41DSlcY8XKoSdb39YRQ')"></div>
+</div>
+<div class="relative h-full p-8 flex flex-col justify-end z-10 bg-gradient-to-t from-[#0A0B14] via-[#0A0B14]/80 to-transparent">
+<div class="mb-auto self-start border border-indigo-500/50 bg-indigo-500/10 text-indigo-400 px-3 py-1 rounded text-xs font-label-sm uppercase tracking-wider backdrop-blur-md">Hackathon</div>
+<h3 class="font-headline-md text-headline-md text-on-background mb-2 group-hover:text-[#E8B84B] transition-colors">Code of the Ancients</h3>
+<p class="font-body-md text-body-md text-on-surface-variant max-w-lg mb-4">A 48-hour endurance test to forge new solutions from archaic systems.</p>
+<div class="flex items-center gap-4 text-xs font-label-sm text-on-surface-variant">
+<span class="flex items-center gap-1"><span class="material-symbols-outlined text-[16px]" data-icon="schedule">schedule</span> Nov 12, 10:00 AM</span>
+<span class="flex items-center gap-1"><span class="material-symbols-outlined text-[16px]" data-icon="group">group</span> 500+ Participants</span>
+</div>
+</div>
+</div>
+<!-- Card 2 -->
+<div class="relative group bg-[#15172A] rounded-xl hairline-border overflow-hidden transition-all duration-300 hover:bg-[#1E2138] metallic-frame">
+<div class="absolute inset-0 opacity-10 group-hover:opacity-20 transition-opacity duration-500">
+<div class="w-full h-full bg-cover bg-center" data-alt="A close-up, macro shot of an intricate, futuristic robotic hand crafting a delicate, glowing golden artifact. The lighting is dramatic, focused on the sparks and the luminous gold against a deep, pitch-black background. The metallic textures of the robot contrast with the ethereal glow of the artifact, embodying the tech-fantasy aesthetic. Sharp focus and high contrast." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuCOD2Vx8qP8bInizg1uiZ-TEOp3VfUjz36nVwx6NUeovtWo8py4XOHdfHvFfaOMBclAnPwe-z8nGzW5fhYZCGg2qWSRPF490Vlphx3pTeCfzTb3DpR8t292jY-jmohO3V_x9QOKGYHDqpst8V1kXx9qTn239sJJXfv-aSny-khlFQ_ADNF6SCadDByQjlQcEEBNSnbpqq0bzLp6MJIzs_U_gRnufF2eUU-GR8tyf05oxD1UQBiDqWi2uQ')"></div>
+</div>
+<div class="relative h-full p-6 flex flex-col justify-between z-10">
+<div class="self-start border border-pink-500/50 bg-pink-500/10 text-pink-400 px-3 py-1 rounded text-xs font-label-sm uppercase tracking-wider">Robotics</div>
+<div>
+<h3 class="font-headline-md text-headline-md text-on-background mb-2">Mecha Clash</h3>
+<p class="font-body-md text-body-md text-on-surface-variant mb-4">Design, build, and battle autonomous constructs.</p>
+<a class="inline-flex items-center gap-2 text-primary text-sm font-label-md hover:underline" href="#">Details <span class="material-symbols-outlined text-[16px]" data-icon="arrow_forward">arrow_forward</span></a>
+</div>
+</div>
+</div>
+<!-- Card 3 -->
+<div class="md:col-span-3 relative group bg-[#15172A] rounded-xl hairline-border overflow-hidden transition-all duration-300 hover:bg-[#1E2138] flex flex-col md:flex-row items-center">
+<div class="w-full md:w-1/3 h-48 md:h-full relative overflow-hidden">
+<div class="absolute inset-0 w-full h-full bg-cover bg-center group-hover:scale-105 transition-transform duration-700" data-alt="A wide, symmetrical shot of a massive, circular amphitheater built from dark stone, illuminated by a brilliant, ethereal light source in the center. Rows of sleek, futuristic metallic seating surround a glowing central stage. The space feels ancient yet equipped for high-tech presentations. The lighting is cool white and deep indigo, creating a grand, cinematic, and slightly mysterious atmosphere." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuDDwTuM33Nq0h5IzL0utPlXPNzVnLUNeAcX5SR4J4ejdQhAnBA9DKZJMegrCOqXi8sxYiVz9XlD3pSYxLzMqPbTlk-UQJZjDpjVfvdeYdGWrnLRLAmEMJdAQ4dnpLkrSkTI6kptsDXOhT02pPUYpqBkvRAIqQkICLrCIc8dExiQ31kZM2saMw9NgzuVxEXXpHJip81E1I1FhBMRRxGGhZzWRBbAOfxAfmWXVXxsOerxepmLWQJfy1V9uw')"></div>
+</div>
+<div class="w-full md:w-2/3 p-8 flex flex-col justify-center">
+<div class="mb-4 self-start border border-violet-500/50 bg-violet-500/10 text-violet-400 px-3 py-1 rounded text-xs font-label-sm uppercase tracking-wider">Keynote</div>
+<h3 class="font-headline-md text-headline-md text-on-background mb-3">The Future of Sentience</h3>
+<p class="font-body-md text-body-md text-on-surface-variant mb-6 max-w-2xl">Join industry leaders for a profound discussion on artificial intelligence and its implications on human history.</p>
+<button class="self-start text-[#E8B84B] border border-[#E8B84B] px-6 py-2 rounded text-sm font-label-md uppercase tracking-wider hover:bg-[#E8B84B]/10 transition-colors">Reserve Seat</button>
+</div>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="w-full py-20 px-margin flex flex-col md:flex-row justify-between items-center gap-8 bg-surface-container-lowest border-t border-outline-variant md:pl-[288px] relative z-40">
+<div class="flex items-center gap-4">
+<img alt="NIRVAN '26 Brand Marks" class="h-10 w-10 object-contain opacity-80 hover:opacity-100 transition-opacity" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAkVruvXquDgYp-c5QPQst66mB1lN-U10iu2hYSbiEEvTffL0PJZTxrQTitJrMsrNEK1uBrs5TvH-8nPxhP0iWugbxQmB-Pgp9I0_ubQ2XpmBhs_DLR5pXZ8inwC2ryK3t1KqY0k7shfYmfU3CrRTKALY_KOmuk8GmVrGyd7ByNtiOo0xFKfUXRHMukBbFt2ZTzHxP-_MlwPB6ZUIFchIrzeiscvYQTeFSzb83iqQuzNEZ5lNcTPZoa0A"/>
+<span class="font-headline-md text-headline-md text-primary">NIRVAN '26</span>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant">Hosted by Tech Geeks © 2026</p>
+<div class="flex gap-6">
+<a class="font-body-md text-body-md text-on-surface-variant hover:text-primary transition-colors" href="#">Privacy Policy</a>
+<a class="font-body-md text-body-md text-on-surface-variant hover:text-primary transition-colors" href="#">Terms of Service</a>
+<a class="font-body-md text-body-md text-on-surface-variant hover:text-primary transition-colors" href="#">Code of Conduct</a>
+</div>
+</footer>
+</body></html>
