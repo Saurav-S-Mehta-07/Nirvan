@@ -82,7 +82,7 @@ export default function Home() {
             playsInline
             className="video-rotate"
           >
-            <source src="/hero-bg.mp4" type="video/mp4" />
+            <source src="https://res.cloudinary.com/drwoag8ru/video/upload/v1787653490/WhatsApp_Video_2026-08-25_at_3.53.15_PM_dnmrqf.mp4" type="video/mp4" />
           </video>
         </div>
 
